@@ -1,0 +1,2474 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Spike = Instance.new("ScreenGui")
+local Spike_2 = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Buttons = Instance.new("Frame")
+local Home = Instance.new("TextButton")
+local Executor = Instance.new("TextButton")
+local Mods = Instance.new("TextButton")
+local GUIS = Instance.new("TextButton")
+local Settings = Instance.new("TextButton")
+local Credits = Instance.new("TextButton")
+local Frames = Instance.new("Frame")
+local Home_2 = Instance.new("Frame")
+local PlayerImage = Instance.new("ImageLabel")
+local Username = Instance.new("TextLabel")
+local AccountAge = Instance.new("TextLabel")
+local SpikeVersion = Instance.new("TextLabel")
+local SpikeUpdate = Instance.new("TextLabel")
+local Executor_2 = Instance.new("Frame")
+local ExecuteBox = Instance.new("TextBox")
+local Execute = Instance.new("TextButton")
+local Clear = Instance.new("TextButton")
+local Mods_2 = Instance.new("Frame")
+local DoubleJump = Instance.new("TextButton")
+local God = Instance.new("TextButton")
+local Fly = Instance.new("TextButton")
+local Respawn = Instance.new("TextButton")
+local SetW = Instance.new("TextButton")
+local Speed = Instance.new("TextBox")
+local SetJ = Instance.new("TextButton")
+local Jump = Instance.new("TextBox")
+local DoubleJump_2 = Instance.new("TextButton")
+local GUIS_2 = Instance.new("Frame")
+local InfinteYeild = Instance.new("TextButton")
+local Solaris = Instance.new("TextButton")
+local Opifinality = Instance.new("TextButton")
+local RevisAdmin = Instance.new("TextButton")
+local DarkDex = Instance.new("TextButton")
+local RoseHub = Instance.new("TextButton")
+local ChatBypasser = Instance.new("TextButton")
+local SweetzGui = Instance.new("TextButton")
+local KrnlHub = Instance.new("TextButton")
+local TopkekV3 = Instance.new("TextButton")
+local ChatSpying = Instance.new("TextButton")
+local FreeCam = Instance.new("TextButton")
+local V3rmCommandBar = Instance.new("TextButton")
+local AwesomeGui = Instance.new("TextButton")
+local Settings_2 = Instance.new("Frame")
+local ChoiceKey = Instance.new("TextButton")
+local Key = Instance.new("TextBox")
+local LightOrDark = Instance.new("TextButton")
+local Credits_2 = Instance.new("Frame")
+local Credits_3 = Instance.new("TextButton")
+local S2 = Instance.new("Frame")
+local S3 = Instance.new("Frame")
+local S4 = Instance.new("Frame")
+local S5 = Instance.new("Frame")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+Spike.Name = "Spike"
+Spike.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Spike_2.Name = "Spike"
+Spike_2.Parent = Spike
+Spike_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Spike_2.Position = UDim2.new(0.0422077924, 0, 0.394468665, 0)
+Spike_2.Size = UDim2.new(0, 498, 0, 38)
+Spike_2.Visible = false
+
+Title.Name = "Title"
+Title.Parent = Spike_2
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.292975932, 0, 0.419708043, 0)
+Title.Size = UDim2.new(0, 205, 0, 44)
+Title.Font = Enum.Font.Gotham
+Title.Text = "SPIKE"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextTransparency = 1.000
+Title.TextWrapped = true
+
+Buttons.Name = "Buttons"
+Buttons.Parent = Spike_2
+Buttons.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Buttons.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Buttons.BorderSizePixel = 2
+Buttons.Position = UDim2.new(-0.00196893536, 0, 0.102189779, 0)
+Buttons.Size = UDim2.new(0, 498, 0, 22)
+Buttons.Visible = false
+
+Home.Name = "Home"
+Home.Parent = Buttons
+Home.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Home.BorderSizePixel = 0
+Home.Size = UDim2.new(0, 65, 0, 22)
+Home.Font = Enum.Font.Gotham
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home.TextSize = 14.000
+
+Executor.Name = "Executor"
+Executor.Parent = Buttons
+Executor.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Executor.BorderSizePixel = 0
+Executor.Position = UDim2.new(0.130522102, 0, 0, 0)
+Executor.Size = UDim2.new(0, 65, 0, 22)
+Executor.Font = Enum.Font.Gotham
+Executor.Text = "Executor"
+Executor.TextColor3 = Color3.fromRGB(255, 255, 255)
+Executor.TextSize = 14.000
+
+Mods.Name = "Mods"
+Mods.Parent = Buttons
+Mods.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Mods.BorderSizePixel = 0
+Mods.Position = UDim2.new(0.259036183, 0, 0, 0)
+Mods.Size = UDim2.new(0, 65, 0, 22)
+Mods.Font = Enum.Font.Gotham
+Mods.Text = "Mods"
+Mods.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mods.TextSize = 14.000
+
+GUIS.Name = "GUIS"
+GUIS.Parent = Buttons
+GUIS.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+GUIS.BorderSizePixel = 0
+GUIS.Position = UDim2.new(0.389558256, 0, 0, 0)
+GUIS.Size = UDim2.new(0, 65, 0, 22)
+GUIS.Font = Enum.Font.Gotham
+GUIS.Text = "GUI's"
+GUIS.TextColor3 = Color3.fromRGB(255, 255, 255)
+GUIS.TextSize = 14.000
+
+Settings.Name = "Settings"
+Settings.Parent = Buttons
+Settings.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.887550175, 0, 0, 0)
+Settings.Size = UDim2.new(0, 53, 0, 22)
+Settings.Font = Enum.Font.Gotham
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextSize = 14.000
+
+Credits.Name = "Credits"
+Credits.Parent = Buttons
+Credits.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0.757028103, 0, 0, 0)
+Credits.Size = UDim2.new(0, 65, 0, 22)
+Credits.Font = Enum.Font.Gotham
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 14.000
+
+Frames.Name = "Frames"
+Frames.Parent = Spike_2
+Frames.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frames.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frames.BorderSizePixel = 2
+Frames.Position = UDim2.new(-0.00196893536, 0, 0.252132893, 0)
+Frames.Size = UDim2.new(0, 498, 0, 182)
+Frames.Visible = false
+
+Home_2.Name = "Home"
+Home_2.Parent = Frames
+Home_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Home_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Home_2.BorderSizePixel = 2
+Home_2.Position = UDim2.new(-0.00196893536, 0, 0, 0)
+Home_2.Size = UDim2.new(0, 498, 0, 180)
+
+PlayerImage.Name = "PlayerImage"
+PlayerImage.Parent = Home_2
+PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerImage.BackgroundTransparency = 1.000
+PlayerImage.Position = UDim2.new(0.0421686731, 0, 0.227777779, 0)
+PlayerImage.Size = UDim2.new(0, 100, 0, 100)
+PlayerImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+Username.Name = "Username"
+Username.Parent = Home_2
+Username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Username.BackgroundTransparency = 1.000
+Username.Position = UDim2.new(0.303016067, 0, 0.227777779, 0)
+Username.Size = UDim2.new(0, 200, 0, 22)
+Username.Font = Enum.Font.Gotham
+Username.Text = "Username: Player"
+Username.TextColor3 = Color3.fromRGB(255, 255, 255)
+Username.TextScaled = true
+Username.TextSize = 14.000
+Username.TextWrapped = true
+
+AccountAge.Name = "AccountAge"
+AccountAge.Parent = Home_2
+AccountAge.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AccountAge.BackgroundTransparency = 1.000
+AccountAge.Position = UDim2.new(0.303016037, 0, 0.661111116, 0)
+AccountAge.Size = UDim2.new(0, 200, 0, 22)
+AccountAge.Font = Enum.Font.Gotham
+AccountAge.Text = "Account Age: Age"
+AccountAge.TextColor3 = Color3.fromRGB(255, 255, 255)
+AccountAge.TextScaled = true
+AccountAge.TextSize = 14.000
+AccountAge.TextWrapped = true
+
+SpikeVersion.Name = "SpikeVersion"
+SpikeVersion.Parent = Home_2
+SpikeVersion.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpikeVersion.BackgroundTransparency = 1.000
+SpikeVersion.Position = UDim2.new(0.303016067, 0, 0.349999994, 0)
+SpikeVersion.Size = UDim2.new(0, 200, 0, 22)
+SpikeVersion.Font = Enum.Font.Gotham
+SpikeVersion.Text = "Spike Version: v1.0.8"
+SpikeVersion.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpikeVersion.TextScaled = true
+SpikeVersion.TextSize = 14.000
+SpikeVersion.TextWrapped = true
+
+SpikeUpdate.Name = "SpikeUpdate"
+SpikeUpdate.Parent = Home_2
+SpikeUpdate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpikeUpdate.BackgroundTransparency = 1.000
+SpikeUpdate.Position = UDim2.new(0.303016067, 0, 0.472222209, 0)
+SpikeUpdate.Size = UDim2.new(0, 200, 0, 22)
+SpikeUpdate.Font = Enum.Font.Gotham
+SpikeUpdate.Text = "Spike Update: 28"
+SpikeUpdate.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpikeUpdate.TextScaled = true
+SpikeUpdate.TextSize = 14.000
+SpikeUpdate.TextWrapped = true
+
+Executor_2.Name = "Executor"
+Executor_2.Parent = Frames
+Executor_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Executor_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Executor_2.BorderSizePixel = 2
+Executor_2.Position = UDim2.new(-0.00196893536, 0, 0, 0)
+Executor_2.Size = UDim2.new(0, 498, 0, 180)
+Executor_2.Visible = false
+
+ExecuteBox.Name = "ExecuteBox"
+ExecuteBox.Parent = Executor_2
+ExecuteBox.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+ExecuteBox.Position = UDim2.new(0.0220883526, 0, 0.0444444455, 0)
+ExecuteBox.Size = UDim2.new(0, 478, 0, 132)
+ExecuteBox.ClearTextOnFocus = false
+ExecuteBox.Font = Enum.Font.Gotham
+ExecuteBox.PlaceholderText = "Write Your Script Here!"
+ExecuteBox.Text = ""
+ExecuteBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteBox.TextSize = 14.000
+ExecuteBox.TextWrapped = true
+ExecuteBox.TextXAlignment = Enum.TextXAlignment.Left
+ExecuteBox.TextYAlignment = Enum.TextYAlignment.Top
+
+Execute.Name = "Execute"
+Execute.Parent = Executor_2
+Execute.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0461847372, 0, 0.822222233, 0)
+Execute.Size = UDim2.new(0, 116, 0, 22)
+Execute.Font = Enum.Font.Gotham
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute.TextSize = 14.000
+
+Clear.Name = "Clear"
+Clear.Parent = Executor_2
+Clear.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.279116422, 0, 0.822222233, 0)
+Clear.Size = UDim2.new(0, 116, 0, 22)
+Clear.Font = Enum.Font.Gotham
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clear.TextSize = 14.000
+
+Mods_2.Name = "Mods"
+Mods_2.Parent = Frames
+Mods_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Mods_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Mods_2.BorderSizePixel = 2
+Mods_2.Position = UDim2.new(-0.00196893536, 0, 0, 0)
+Mods_2.Size = UDim2.new(0, 498, 0, 180)
+Mods_2.Visible = false
+
+DoubleJump.Name = "DoubleJump"
+DoubleJump.Parent = Mods_2
+DoubleJump.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+DoubleJump.BorderSizePixel = 0
+DoubleJump.Position = UDim2.new(0.0220883526, 0, 0.0333333611, 0)
+DoubleJump.Size = UDim2.new(0, 116, 0, 22)
+DoubleJump.Font = Enum.Font.Gotham
+DoubleJump.Text = "Double Jump"
+DoubleJump.TextColor3 = Color3.fromRGB(255, 255, 255)
+DoubleJump.TextSize = 14.000
+
+God.Name = "God"
+God.Parent = Mods_2
+God.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+God.BorderSizePixel = 0
+God.Position = UDim2.new(0.255020022, 0, 0.0333333611, 0)
+God.Size = UDim2.new(0, 116, 0, 22)
+God.Font = Enum.Font.Gotham
+God.Text = "God Mode"
+God.TextColor3 = Color3.fromRGB(255, 255, 255)
+God.TextSize = 14.000
+
+Fly.Name = "Fly"
+Fly.Parent = Mods_2
+Fly.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.487951726, 0, 0.0333333611, 0)
+Fly.Size = UDim2.new(0, 116, 0, 22)
+Fly.Font = Enum.Font.Gotham
+Fly.Text = "	Fly Mode"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextSize = 14.000
+
+Respawn.Name = "Respawn"
+Respawn.Parent = Mods_2
+Respawn.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Respawn.BorderSizePixel = 0
+Respawn.Position = UDim2.new(0.720883489, 0, 0.0333333611, 0)
+Respawn.Size = UDim2.new(0, 116, 0, 22)
+Respawn.Font = Enum.Font.Gotham
+Respawn.Text = "Respawn"
+Respawn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Respawn.TextSize = 14.000
+
+SetW.Name = "SetW"
+SetW.Parent = Mods_2
+SetW.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+SetW.BorderSizePixel = 0
+SetW.Position = UDim2.new(0.022088293, 0, 0.444444478, 0)
+SetW.Size = UDim2.new(0, 116, 0, 22)
+SetW.Font = Enum.Font.Gotham
+SetW.Text = "Set WalkSpeed"
+SetW.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetW.TextSize = 14.000
+
+Speed.Name = "Speed"
+Speed.Parent = SetW
+Speed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Speed.Position = UDim2.new(0, 0, -1.77272725, 0)
+Speed.Size = UDim2.new(0, 116, 0, 23)
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = ""
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextSize = 14.000
+
+SetJ.Name = "SetJ"
+SetJ.Parent = Mods_2
+SetJ.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+SetJ.BorderSizePixel = 0
+SetJ.Position = UDim2.new(0.720883489, 0, 0.444444478, 0)
+SetJ.Size = UDim2.new(0, 116, 0, 22)
+SetJ.Font = Enum.Font.Gotham
+SetJ.Text = "Set JumpPower"
+SetJ.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetJ.TextSize = 14.000
+
+Jump.Name = "Jump"
+Jump.Parent = SetJ
+Jump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Jump.Position = UDim2.new(0, 0, -1.77272725, 0)
+Jump.Size = UDim2.new(0, 116, 0, 23)
+Jump.Font = Enum.Font.SourceSans
+Jump.Text = ""
+Jump.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jump.TextSize = 14.000
+
+DoubleJump_2.Name = "DoubleJump"
+DoubleJump_2.Parent = Mods_2
+DoubleJump_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+DoubleJump_2.BorderSizePixel = 0
+DoubleJump_2.Position = UDim2.new(0.285140544, 0, 0.233333334, 0)
+DoubleJump_2.Size = UDim2.new(0, 203, 0, 60)
+DoubleJump_2.Font = Enum.Font.Gotham
+DoubleJump_2.Text = "MORE SOON!"
+DoubleJump_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+DoubleJump_2.TextSize = 14.000
+
+GUIS_2.Name = "GUIS"
+GUIS_2.Parent = Frames
+GUIS_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+GUIS_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+GUIS_2.BorderSizePixel = 2
+GUIS_2.Position = UDim2.new(-0.00196893536, 0, 0, 0)
+GUIS_2.Size = UDim2.new(0, 498, 0, 180)
+GUIS_2.Visible = false
+
+InfinteYeild.Name = "InfinteYeild"
+InfinteYeild.Parent = GUIS_2
+InfinteYeild.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+InfinteYeild.BorderSizePixel = 0
+InfinteYeild.Position = UDim2.new(0.0341365449, 0, 0.0333333611, 0)
+InfinteYeild.Size = UDim2.new(0, 116, 0, 22)
+InfinteYeild.Font = Enum.Font.Gotham
+InfinteYeild.Text = "Infinte Yeild"
+InfinteYeild.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfinteYeild.TextSize = 14.000
+
+Solaris.Name = "Solaris"
+Solaris.Parent = GUIS_2
+Solaris.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Solaris.BorderSizePixel = 0
+Solaris.Position = UDim2.new(0.267068267, 0, 0.0333333611, 0)
+Solaris.Size = UDim2.new(0, 116, 0, 22)
+Solaris.Font = Enum.Font.Gotham
+Solaris.Text = "Solaris"
+Solaris.TextColor3 = Color3.fromRGB(255, 255, 255)
+Solaris.TextSize = 14.000
+
+Opifinality.Name = "Opifinality"
+Opifinality.Parent = GUIS_2
+Opifinality.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Opifinality.BorderSizePixel = 0
+Opifinality.Position = UDim2.new(0.5, 0, 0.0333333611, 0)
+Opifinality.Size = UDim2.new(0, 116, 0, 22)
+Opifinality.Font = Enum.Font.Gotham
+Opifinality.Text = "Opifinality"
+Opifinality.TextColor3 = Color3.fromRGB(255, 255, 255)
+Opifinality.TextSize = 14.000
+
+RevisAdmin.Name = "RevisAdmin"
+RevisAdmin.Parent = GUIS_2
+RevisAdmin.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+RevisAdmin.BorderSizePixel = 0
+RevisAdmin.Position = UDim2.new(0.732931733, 0, 0.0333333611, 0)
+RevisAdmin.Size = UDim2.new(0, 116, 0, 22)
+RevisAdmin.Font = Enum.Font.Gotham
+RevisAdmin.Text = "Revis Admin"
+RevisAdmin.TextColor3 = Color3.fromRGB(255, 255, 255)
+RevisAdmin.TextSize = 14.000
+
+DarkDex.Name = "DarkDex"
+DarkDex.Parent = GUIS_2
+DarkDex.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+DarkDex.BorderSizePixel = 0
+DarkDex.Position = UDim2.new(0.0341365337, 0, 0.155555576, 0)
+DarkDex.Size = UDim2.new(0, 116, 0, 22)
+DarkDex.Font = Enum.Font.Gotham
+DarkDex.Text = "Dark Dex"
+DarkDex.TextColor3 = Color3.fromRGB(255, 255, 255)
+DarkDex.TextSize = 14.000
+
+RoseHub.Name = "RoseHub"
+RoseHub.Parent = GUIS_2
+RoseHub.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+RoseHub.BorderSizePixel = 0
+RoseHub.Position = UDim2.new(0.267068267, 0, 0.155555576, 0)
+RoseHub.Size = UDim2.new(0, 116, 0, 22)
+RoseHub.Font = Enum.Font.Gotham
+RoseHub.Text = "Rose Hub"
+RoseHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+RoseHub.TextSize = 14.000
+
+ChatBypasser.Name = "ChatBypasser"
+ChatBypasser.Parent = GUIS_2
+ChatBypasser.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ChatBypasser.BorderSizePixel = 0
+ChatBypasser.Position = UDim2.new(0.5, 0, 0.155555576, 0)
+ChatBypasser.Size = UDim2.new(0, 116, 0, 22)
+ChatBypasser.Font = Enum.Font.Gotham
+ChatBypasser.Text = "Chat Bypasser"
+ChatBypasser.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChatBypasser.TextSize = 14.000
+
+SweetzGui.Name = "SweetzGui"
+SweetzGui.Parent = GUIS_2
+SweetzGui.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+SweetzGui.BorderSizePixel = 0
+SweetzGui.Position = UDim2.new(0.732931733, 0, 0.155555576, 0)
+SweetzGui.Size = UDim2.new(0, 116, 0, 22)
+SweetzGui.Font = Enum.Font.Gotham
+SweetzGui.Text = "Sweetz Gui"
+SweetzGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+SweetzGui.TextSize = 14.000
+
+KrnlHub.Name = "KrnlHub"
+KrnlHub.Parent = GUIS_2
+KrnlHub.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+KrnlHub.BorderSizePixel = 0
+KrnlHub.Position = UDim2.new(0.0341365449, 0, 0.283333331, 0)
+KrnlHub.Size = UDim2.new(0, 116, 0, 21)
+KrnlHub.Font = Enum.Font.Gotham
+KrnlHub.Text = "Krnl Hub"
+KrnlHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+KrnlHub.TextSize = 14.000
+
+TopkekV3.Name = "TopkekV3"
+TopkekV3.Parent = GUIS_2
+TopkekV3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TopkekV3.BorderSizePixel = 0
+TopkekV3.Position = UDim2.new(0.267068267, 0, 0.288888901, 0)
+TopkekV3.Size = UDim2.new(0, 116, 0, 21)
+TopkekV3.Font = Enum.Font.Gotham
+TopkekV3.Text = "Topkek V3"
+TopkekV3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TopkekV3.TextSize = 14.000
+
+ChatSpying.Name = "ChatSpying"
+ChatSpying.Parent = GUIS_2
+ChatSpying.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ChatSpying.BorderSizePixel = 0
+ChatSpying.Position = UDim2.new(0.5, 0, 0.288888901, 0)
+ChatSpying.Size = UDim2.new(0, 116, 0, 21)
+ChatSpying.Font = Enum.Font.Gotham
+ChatSpying.Text = "Chat Spying"
+ChatSpying.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChatSpying.TextSize = 14.000
+
+FreeCam.Name = "FreeCam"
+FreeCam.Parent = GUIS_2
+FreeCam.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+FreeCam.BorderSizePixel = 0
+FreeCam.Position = UDim2.new(0.732931733, 0, 0.283333331, 0)
+FreeCam.Size = UDim2.new(0, 116, 0, 21)
+FreeCam.Font = Enum.Font.Gotham
+FreeCam.Text = "Free Cam"
+FreeCam.TextColor3 = Color3.fromRGB(255, 255, 255)
+FreeCam.TextSize = 14.000
+
+V3rmCommandBar.Name = "V3rmCommandBar"
+V3rmCommandBar.Parent = GUIS_2
+V3rmCommandBar.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+V3rmCommandBar.BorderSizePixel = 0
+V3rmCommandBar.Position = UDim2.new(0.0341365449, 0, 0.405555546, 0)
+V3rmCommandBar.Size = UDim2.new(0, 144, 0, 21)
+V3rmCommandBar.Font = Enum.Font.Gotham
+V3rmCommandBar.Text = "V3rm Command Bar"
+V3rmCommandBar.TextColor3 = Color3.fromRGB(255, 255, 255)
+V3rmCommandBar.TextSize = 14.000
+
+AwesomeGui.Name = "AwesomeGui"
+AwesomeGui.Parent = GUIS_2
+AwesomeGui.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AwesomeGui.BorderSizePixel = 0
+AwesomeGui.Position = UDim2.new(0.323293179, 0, 0.405555546, 0)
+AwesomeGui.Size = UDim2.new(0, 116, 0, 21)
+AwesomeGui.Font = Enum.Font.Gotham
+AwesomeGui.Text = "Awesome Gui"
+AwesomeGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+AwesomeGui.TextSize = 14.000
+
+Settings_2.Name = "Settings"
+Settings_2.Parent = Frames
+Settings_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Settings_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Settings_2.BorderSizePixel = 2
+Settings_2.Position = UDim2.new(-0.00196893536, 0, 0, 0)
+Settings_2.Size = UDim2.new(0, 498, 0, 180)
+Settings_2.Visible = false
+
+ChoiceKey.Name = "ChoiceKey"
+ChoiceKey.Parent = Settings_2
+ChoiceKey.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ChoiceKey.BorderSizePixel = 0
+ChoiceKey.Position = UDim2.new(0.389558196, 0, 0.516666651, 0)
+ChoiceKey.Size = UDim2.new(0, 113, 0, 53)
+ChoiceKey.Font = Enum.Font.Gotham
+ChoiceKey.Text = "Change Key"
+ChoiceKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChoiceKey.TextScaled = true
+ChoiceKey.TextSize = 25.000
+ChoiceKey.TextWrapped = true
+
+Key.Name = "Key"
+Key.Parent = ChoiceKey
+Key.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Key.Position = UDim2.new(0, 0, 1, 0)
+Key.Size = UDim2.new(0, 113, 0, 27)
+Key.Font = Enum.Font.SourceSans
+Key.PlaceholderText = "LeftCtrl"
+Key.Text = ""
+Key.TextColor3 = Color3.fromRGB(255, 255, 255)
+Key.TextSize = 14.000
+
+LightOrDark.Name = "LightOrDark"
+LightOrDark.Parent = Settings_2
+LightOrDark.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+LightOrDark.BorderSizePixel = 0
+LightOrDark.Position = UDim2.new(0.363453805, 0, 0.0388888903, 0)
+LightOrDark.Size = UDim2.new(0, 136, 0, 53)
+LightOrDark.Font = Enum.Font.Gotham
+LightOrDark.Text = "Light/Dark"
+LightOrDark.TextColor3 = Color3.fromRGB(255, 255, 255)
+LightOrDark.TextScaled = true
+LightOrDark.TextSize = 25.000
+LightOrDark.TextWrapped = true
+
+Credits_2.Name = "Credits"
+Credits_2.Parent = Frames
+Credits_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Credits_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Credits_2.BorderSizePixel = 2
+Credits_2.Position = UDim2.new(-0.00196893536, 0, 0, 0)
+Credits_2.Size = UDim2.new(0, 498, 0, 180)
+Credits_2.Visible = false
+
+Credits_3.Name = "Credits"
+Credits_3.Parent = Credits_2
+Credits_3.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Credits_3.BorderSizePixel = 0
+Credits_3.Position = UDim2.new(0.4759036, 0, 0.444444478, 0)
+Credits_3.Size = UDim2.new(0, 23, 0, 21)
+Credits_3.Font = Enum.Font.Gotham
+Credits_3.Text = "All Credit Goes To The Script Owners/Creators and Credit Goes To Me For Building This GUI."
+Credits_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits_3.TextSize = 10.000
+
+S2.Name = "S2"
+S2.Parent = Spike
+S2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+S2.Position = UDim2.new(0.042207785, 0, 0.473071337, 0)
+S2.Size = UDim2.new(0, 498, 0, 38)
+S2.Visible = false
+
+S3.Name = "S3"
+S3.Parent = Spike
+S3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+S3.Position = UDim2.new(0.042207785, 0, 0.558951974, 0)
+S3.Size = UDim2.new(0, 498, 0, 38)
+S3.Visible = false
+
+S4.Name = "S4"
+S4.Parent = Spike
+S4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+S4.Position = UDim2.new(0.042207785, 0, 0.630276561, 0)
+S4.Size = UDim2.new(0, 498, 0, 38)
+S4.Visible = false
+
+S5.Name = "S5"
+S5.Parent = Spike
+S5.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+S5.Position = UDim2.new(0.042207785, 0, 0.703056753, 0)
+S5.Size = UDim2.new(0, 498, 0, 38)
+S5.Visible = false
+
+Open.Name = "Open"
+Open.Parent = Spike
+Open.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.897816539, 0, 0.0110429451, 0)
+Open.Size = UDim2.new(0, 115, 0, 22)
+Open.Visible = false
+Open.Font = Enum.Font.Gotham
+Open.Text = "Close Spike"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextSize = 14.000
+
+-- Scripts:
+
+local function SPXZ_fake_script() -- PlayerImage.Image 
+	local script = Instance.new('LocalScript', PlayerImage)
+
+	--Made by TimmyLikesChez
+	
+	repeat wait() until game.Players.LocalPlayer.Character ~= nil
+	
+	local Player = game.Players.LocalPlayer
+	
+	local UserId = game.Players.LocalPlayer.UserId
+	local ThumbType = Enum.ThumbnailType.HeadShot
+	local ThumbSize = Enum.ThumbnailSize.Size420x420
+	
+	script.Parent.Image = game.Players:GetUserThumbnailAsync(UserId,ThumbType,ThumbSize)
+end
+coroutine.wrap(SPXZ_fake_script)()
+local function DLIXF_fake_script() -- Username.Name 
+	local script = Instance.new('LocalScript', Username)
+
+	local Player = game.Players.LocalPlayer
+	script.Parent.Text = "Username:".." "..Player.Name
+end
+coroutine.wrap(DLIXF_fake_script)()
+local function MTVU_fake_script() -- AccountAge.Age 
+	local script = Instance.new('LocalScript', AccountAge)
+
+	local Player = game.Players.LocalPlayer
+	local UserId = game.Players.LocalPlayer.UserId
+	script.Parent.Text = "Account Age:".." "..Player.AccountAge
+end
+coroutine.wrap(MTVU_fake_script)()
+local function EHDLFYN_fake_script() -- SpikeVersion.Name 
+	local script = Instance.new('LocalScript', SpikeVersion)
+
+	local Player = game.Players.LocalPlayer
+	script.Parent.Text = "Username:".." "..Player.Name
+end
+coroutine.wrap(EHDLFYN_fake_script)()
+local function QJXT_fake_script() -- SpikeUpdate.Name 
+	local script = Instance.new('LocalScript', SpikeUpdate)
+
+	local Player = game.Players.LocalPlayer
+	script.Parent.Text = "Username:".." "..Player.Name
+end
+coroutine.wrap(QJXT_fake_script)()
+local function QAMF_fake_script() -- LightOrDark.LightOrDark 
+	local script = Instance.new('LocalScript', LightOrDark)
+
+	Light = false
+	Dark = true
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	    if Dark == true then
+	        Light = true
+	        Dark = false
+	        script.Parent.Parent.BackgroundColor3 = Color3.new(1, 1, 1)
+	        script.Parent.Parent.Parent.Credits.BackgroundColor3 = Color3.new(1, 1, 1)
+	        script.Parent.Parent.Parent.GUIS.BackgroundColor3 = Color3.new(1, 1, 1)
+	        script.Parent.Parent.Parent.Executor.BackgroundColor3 = Color3.new(1, 1, 1)
+	        script.Parent.Parent.Parent.Home.BackgroundColor3 = Color3.new(1, 1, 1)
+	        script.Parent.Parent.Parent.Mods.BackgroundColor3 = Color3.new(1, 1, 1)
+	    else
+	        Light = false
+	        Dark = true
+	        script.Parent.Parent.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+	        script.Parent.Parent.Parent.Credits.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+	        script.Parent.Parent.Parent.GUIS.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+	        script.Parent.Parent.Parent.Executor.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+	        script.Parent.Parent.Parent.Home.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+	        script.Parent.Parent.Parent.Mods.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+	        end
+	    end)
+end
+coroutine.wrap(QAMF_fake_script)()
+local function WSZTCE_fake_script() -- Spike_2.KeyPress 
+	local script = Instance.new('LocalScript', Spike_2)
+
+	--[[
+		
+		Press Key to Open a GUI Script V2
+		Script By: Theevilem
+		
+		This script works so that when you press a key on your keyboard, it opens a Gui.
+		
+		Put it accordingly into the StarterGui (More info on line 17
+		
+	--]]
+	
+	wait()
+	
+	local Players = game:GetService("Players")
+	local Player = Players.LocalPlayer
+	
+	local Mouse = Player:GetMouse()
+	local Gui = script.Parent
+	local Open = false
+	
+	function PressQ(key)
+		if (key == script.Parent.Frames.Settings.ChoiceKey.Key.Text) then
+			if (Open == false) then
+				Gui.Visible = true
+				Open = true
+			elseif (Open == true) then
+				Gui.Visible = false
+	                Open = false
+	      end
+	    end
+	  end
+	Mouse.KeyDown:Connect(PressQ) -- Make sure (PressQ) matches what you have for line 20. For Example: (PressH)
+end
+coroutine.wrap(WSZTCE_fake_script)()
+local function OUXP_fake_script() -- Spike_2.Dragify 
+	local script = Instance.new('LocalScript', Spike_2)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0.15
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
+	
+end
+coroutine.wrap(OUXP_fake_script)()
+local function MMEOF_fake_script() -- Spike.LoadingSpike 
+	local script = Instance.new('LocalScript', Spike)
+
+	-- Spike Loading Variables Code Line
+	local plr = game.Players.LocalPlayer
+	local Spike = script.Parent.Spike
+	local Title = Spike.Title
+	local S2 = script.Parent.S2
+	local S3 = script.Parent.S3
+	local S4 = script.Parent.S4
+	local S5 = script.Parent.S5
+	local HomeFrame = Spike.Frames.Home
+	local HomeBtn = Spike.Buttons.Home
+	local OpenBtn = script.Parent.Open
+	-- Spike Loading Code Line
+	wait(5.8)
+	Spike.Visible = true
+	wait(0.8)
+	S2.Visible = true
+	wait(0.8)
+	S3.Visible = true
+	wait(0.8)
+	S4.Visible = true
+	wait(0.8)
+	S5.Visible = true
+	wait(2.8)
+	S5.Visible = false
+	wait(0.8)
+	S4.Visible = false
+	wait(0.8)
+	S3.Visible = false
+	wait(0.8)
+	S2.Visible = false
+	wait(0.8)
+	Spike:TweenSize(
+	    UDim2.new(0, 496,0, 0)
+	)
+	wait(2.8)
+	Spike:TweenSize(
+	    UDim2.new(0, 498,0, 274)
+	)
+	wait(2.8)
+	Title.TextTransparency -= 0.1
+	wait(0.1)
+	Title.TextTransparency -= 0.1
+	wait(0.1)
+	Title.TextTransparency -= 0.1
+	wait(0.1)
+	Title.TextTransparency -= 0.1
+	wait(0.1)
+	Title.TextTransparency -= 0.1
+	wait(0.1)
+	Title.TextTransparency -= 0.1
+	wait(0.1)
+	Title.TextTransparency -= 0.1
+	wait(0.1)
+	Title.TextTransparency -= 0.1
+	wait(0.1)
+	Title.TextTransparency -= 0.1
+	wait(0.1)
+	Title.TextTransparency -= 0.1
+	wait(2.8)
+	Title:TweenSizeAndPosition(UDim2.new(0, 200,0, 22), UDim2.new(0.299, 0,0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Bounce)
+	wait(2.8)
+	Spike.Frames.Visible = true
+	Spike.Buttons.Visible = true
+	OpenBtn.Visible = true
+end
+coroutine.wrap(MMEOF_fake_script)()
+local function AQJF_fake_script() -- Spike.SystemSpike 
+	local script = Instance.new('LocalScript', Spike)
+
+	-- Spike Variables
+	local plr = game.Players.LocalPlayer
+	local Spike = script.Parent.Spike
+	local Tabs = Spike.Buttons
+	local Frames = Spike.Frames
+	local Home = Frames.Home
+	local HomeBtn = Tabs.Home
+	local ExecutorBtn  =Tabs.Executor
+	local ModsBtn = Tabs.Mods
+	local GUISBtn = Tabs.GUIS
+	local CreditsBtn = Tabs.Credits
+	local SettingsBtn = Tabs.Settings
+	local Executor = Frames.Executor
+	local ExecuteBox = Executor.ExecuteBox
+	local Execute = Executor.Execute
+	local Clear = Executor.Clear
+	local Mods = Frames.Mods
+	local DoubleJump = Mods.DoubleJump
+	local God = Mods.God
+	local Fly = Mods.Fly
+	local Respawn = Mods.Respawn
+	local SetW = Mods.SetW
+	local Speed = SetW.Speed
+	local SetJ = Mods.SetJ
+	local Jump = SetJ.Jump
+	local GUIS = Frames.GUIS
+	local InfiniteYeild = GUIS.InfinteYeild
+	local Solaris = GUIS.Solaris
+	local Opifinality = GUIS.Opifinality
+	local RevisAdmin = GUIS.RevisAdmin
+	local DarkDex = GUIS.DarkDex
+	local RoseHub = GUIS.RoseHub
+	local ChatBypasser = GUIS.ChatBypasser
+	local SweetzGui = GUIS.SweetzGui
+	local KrnlHub = GUIS.KrnlHub
+	local TopkekV3 = GUIS.TopkekV3
+	local ChatSpying = GUIS.ChatSpying
+	local FreeCam = GUIS.FreeCam
+	local Credits = Frames.Credits
+	local Settings = Frames.Settings
+	local SettingsBtn = Tabs.Settings
+	-- Spike
+	-- Tabs
+	HomeBtn.MouseButton1Click:Connect(function()
+	    Home.Visible = true
+	    Executor.Visible = false
+	    Mods.Visible = false
+	    GUIS.Visible = false
+	    Credits.Visible = false
+	    Settings.Visible = false
+	end)
+	ExecutorBtn.MouseButton1Click:Connect(function()
+	    Home.Visible = false
+	    Executor.Visible = true
+	    Mods.Visible = false
+	    GUIS.Visible = false
+	    Credits.Visible = false
+	    Settings.Visible = false
+	end)
+	ModsBtn.MouseButton1Click:Connect(function()
+	    Home.Visible = false
+	    Executor.Visible = false
+	    Mods.Visible = true
+	    GUIS.Visible = false
+	    Credits.Visible = false
+	    Settings.Visible = false
+	end)
+	GUISBtn.MouseButton1Click:Connect(function()
+	    Home.Visible = false
+	    Executor.Visible = false
+	    Mods.Visible = false
+	    GUIS.Visible = true
+	    Credits.Visible = false
+	    Settings.Visible = false
+	end)
+	CreditsBtn.MouseButton1Click:Connect(function()
+	    Home.Visible = false
+	    Executor.Visible = false
+	    Mods.Visible = false
+	    GUIS.Visible = false
+	    Credits.Visible = true
+	    Settings.Visible = false
+	end)
+	SettingsBtn.MouseButton1Click:Connect(function()
+	    Home.Visible = false
+	    Executor.Visible = false
+	    Mods.Visible = false
+	    GUIS.Visible = false
+	    Credits.Visible = false
+	    Settings.Visible =  true
+	end)
+	-- Executor
+	local ExecuteBox = Executor.ExecuteBox
+	Execute.MouseButton1Click:Connect(function()
+	    loadstring(ExecuteBox.Text)()
+	end)
+	Clear.MouseButton1Click:Connect(function()
+	    ExecuteBox.Text = ""
+	end)
+	-- Mods
+	DoubleJump.MouseButton1Click:Connect(function()
+	    -- DOUBLE JUMPING SCRIPT --
+	
+	    local UserInputService = game:GetService("UserInputService")
+	    local localPlayer = game.Players.LocalPlayer
+	    local character
+	    local humanoid
+	
+	    local canDoubleJump = false
+	    local hasDoubleJumped = false
+	    local oldPowerlocal TIME_BETWEEN_JUMPS = 0.1
+	    local DOUBLE_JUMP_POWER_MULTIPLIER = 1.5
+	
+	    function onJumpRequest()
+	        if not character or not humanoid or not character:IsDescendantOf(workspace) or
+	            humanoid:GetState() == Enum.HumanoidStateType.Dead then
+	            return
+	        end
+	
+	        if canDoubleJump and not hasDoubleJumped then
+	            hasDoubleJumped = true
+	            humanoid.JumpPower = oldPower * DOUBLE_JUMP_POWER_MULTIPLIER		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	        end
+	    end
+	
+	    local function characterAdded(newCharacter)
+	        character = newCharacter
+	        humanoid = newCharacter:WaitForChild("Humanoid")
+	        hasDoubleJumped = false
+	        canDoubleJump = false
+	        oldPower = humanoid.JumpPower 
+	        humanoid.StateChanged:connect(function(old, new)
+	            if new == Enum.HumanoidStateType.Landed then
+	                canDoubleJump = false
+	                hasDoubleJumped = false
+	                humanoid.JumpPower = oldPower		elseif new == Enum.HumanoidStateType.Freefall then
+	                wait(TIME_BETWEEN_JUMPS)			canDoubleJump = true
+	            end
+	        end)
+	    end
+	
+	    if localPlayer.Character then
+	        characterAdded(localPlayer.Character)
+	    end
+	
+	    localPlayer.CharacterAdded:connect(characterAdded)
+	    UserInputService.JumpRequest:connect(onJumpRequest)
+	    
+	    DoubleJump.Visible = true
+	    wait(5.8)
+	    DoubleJump.Visible = false
+	end)
+	God.MouseButton1Click:Connect(function()
+	    plr.Character:FindFirstChild("Humanoid").Health = math.huge
+	end)
+	Fly.MouseButton1Click:Connect(function()
+	    repeat wait() 
+	    until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+	    local mouse = game.Players.LocalPlayer:GetMouse() 
+	    repeat wait() until mouse
+	    local plr = game.Players.LocalPlayer 
+	    local torso = plr.Character.Head 
+	    local flying = false
+	    local deb = true 
+	    local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+	    local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+	    local maxspeed = 400 
+	    local speed = 5000 
+	
+	    function Fly() 
+	        local bg = Instance.new("BodyGyro", torso) 
+	        bg.P = 9e4 
+	        bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+	        bg.cframe = torso.CFrame 
+	        local bv = Instance.new("BodyVelocity", torso) 
+	        bv.velocity = Vector3.new(0,0.1,0) 
+	        bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+	        repeat wait() 
+	            plr.Character.Humanoid.PlatformStand = true 
+	            if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+	                speed = speed+.5+(speed/maxspeed) 
+	                if speed > maxspeed then 
+	                    speed = maxspeed 
+	                end 
+	            elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+	                speed = speed-1 
+	                if speed < 0 then 
+	                    speed = 0 
+	                end 
+	            end 
+	            if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+	                bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+	                lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+	            elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+	                bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+	            else 
+	                bv.velocity = Vector3.new(0,0.1,0) 
+	            end 
+	            bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+	        until not flying 
+	        ctrl = {f = 0, b = 0, l = 0, r = 0} 
+	        lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+	        speed = 0 
+	        bg:Destroy() 
+	        bv:Destroy() 
+	        plr.Character.Humanoid.PlatformStand = false 
+	    end 
+	    mouse.KeyDown:connect(function(key) 
+	        if key:lower() == "e" then 
+	            if flying then flying = false 
+	            else 
+	                flying = true 
+	                Fly() 
+	            end 
+	        elseif key:lower() == "w" then 
+	            ctrl.f = 1 
+	        elseif key:lower() == "s" then 
+	            ctrl.b = -1 
+	        elseif key:lower() == "a" then 
+	            ctrl.l = -1 
+	        elseif key:lower() == "d" then 
+	            ctrl.r = 1 
+	        end 
+	    end) 
+	    mouse.KeyUp:connect(function(key) 
+	        if key:lower() == "w" then 
+	            ctrl.f = 0 
+	        elseif key:lower() == "s" then 
+	            ctrl.b = 0 
+	        elseif key:lower() == "a" then 
+	            ctrl.l = 0 
+	        elseif key:lower() == "d" then 
+	            ctrl.r = 0 
+	        end 
+	    end)
+	    Fly()
+	end)
+	Respawn.MouseButton1Click:Connect(function()
+	    plr.Character:FindFirstChild("Humanoid").Health = 0
+	end)
+	SetW.MouseButton1Click:Connect(function()
+	    plr.Character:FindFirstChild("Humanoid").WalkSpeed = Speed.Text
+	end)
+	SetJ.MouseButton1Click:Connect(function()
+	    plr.Character:FindFirstChild("Humanoid").JumpPower = Jump.Text
+	end)
+	-- GUIS
+	InfiniteYeild.MouseButton1Click:Connect(function()
+	    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	end)
+	Solaris.MouseButton1Click:Connect(function()
+	        loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
+	end)
+	Opifinality.MouseButton1Click:Connect(function()
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/EUOHFIWIDKA/main/FE%20Gui.txt'))()
+	end)
+	RevisAdmin.MouseButton1Click:Connect(function()
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/EUOHFIWIDKA/main/FE%20Gui.txt'))()
+	end)
+	DarkDex.MouseButton1Click:Connect(function()
+	    loadstring(game:HttpGet("https://pastebin.com/raw/LiT0AivK",true))()
+	end)
+	RoseHub.MouseButton1Click:Connect(function()
+	    --local coreGui = game:GetService("Players").LocalPlayer.PlayerGui
+	    local coreGui = game:GetService("CoreGui")
+	    local tweening = false
+	    local tabPos = 5
+	    local scriptsTabText = ""
+	    local feTabText = ""
+	    local gameScriptsTabText = ""
+	    local guiTabText = ""
+	
+	    local scripttabList = {
+	        {"Infinite Yield", "MjBzRjmT", 1},
+	        {"Knife V3", "W833RBFr", 1},
+	        {"Bird Wings", "RQ9b8UTv", 1},
+	        {"M4A1", "eP1zq8tb", 1},
+	        {"Dungun", "90M7Mi8e", 1},
+	        {"Bomb Vest", "tG1PPuMd", 1},
+	        {"Music Bars", "SvYebC2r", 1},
+	        {"Omni God", "87NeeChc", 1},
+	        {"Pain Titan", "Hg5L8EtM", 1,},
+	        {"Reaper Titan", "B0q3QBg6", 1},
+	        {"Alter Chat", "ZSB4pN9R", 1},
+	        {"Hoverbike", 01268225564, 2},
+	        {"Rail Gun Titan", "0wFiFdwM", 1},
+	        {"True Hero", "P8AQ2ebJ", 1},
+	        {"Celestial Wheel", "bymTcgzf", 1},
+	        {"Knive V4", "j0Ns1w1S", 1},
+	        {"Ravenger Claws", "D7GxxvWL", 1},
+	        {"John Doe", "m5wHsLhr", 1},
+	        {"Messor Titan", "4bSrkLtA", 1},
+	        {"Clown Titan", "L0WLDZvc", 1},
+	        {"Chara", "HrWjgXtb", 1},
+	        {"Shedlesky Rage", "2SPz35LS", 1},
+	        {"LunchaThug", "x6GWFC5K", 1},
+	        {"Nazi Flag", "ZCZNxFBD", 1},
+	        {"Psychopath", "DGqk3bqY", 1},
+	        {"Fireworks Wand", "GB29NAPv", 1},
+	        {"Psycho Clown", "UgxKqKwE", 1},
+	        {"Inferno", "qhMGk36S", 1},
+	        {"Police Titan", "UCmufLU8", 1},
+	        {"Galaxy Titan", "nKNdCrKj", 1},
+	        {"Holy Wrench", "cKSh0a8C", 1},
+	        {"Krystal Dance", "j7EqLfbP", 1},
+	        {"Pee", "3CYmA0Pz", 1},
+	        {"Jihad", "vSujnuaF", 1},
+	        {"Hermit Purple", "R3C3ajQV", 1},
+	        {"Golden Gun", "2574Sd9E", 1},
+	        {"Goku", "yAXZZF9r", 1},
+	        {"Emoji", "vKPcMKnm", 1},
+	        {"Damn Son", "AMLHT8aJ", 1},
+	        {"Devuzi", "q0mt2peM", 1},
+	        {"Flash", "gGSVVq1H", 1},
+	        {"Teal Scythe", "0TUBSaxt", 1},
+	        {"Demon Demise", "ghMDMW63", 1},
+	        {"Red Sayan", "uC5DBvf9", 1},
+	        {"Ban Hammer", "1ynQ4Mu0", 1},
+	        {"Dick Gun", "UR9FBjcj", 1},
+	        {"Dat Boi", "Sz7KJHay", 1},
+	        {"Watermelon Trap", "pypsM3hj", 1},
+	        {"Whip", "XDsek3Rf", 1},
+	        {"School Shooter", "EmmwRFDA", 1},
+	        {"9/11", "3UmV26hG", 1},
+	        {"Bong", "8Kb08E9s", 1},
+	        {"Horse", "MVph7nmq", 1},
+	        {"Scythe", "fEEVkJba", 1},
+	        {"Disco Fog", "xg8d4PS0", 1},
+	        {"Disco Mesh", "GvtPCRVR", 1},
+	        {"Russian Dance", "RADQ2vH8", 1},
+	        {"Sun God", "0uJhLJ5m", 1},
+	        {"Rolling Light Ball", "S4Hj3MPd", 1},
+	        {"Red Death Scythe", "KJ5nqeVF", 1},
+	        {"Crystal Pistols", "GDLZ4VAq", 1},
+	        {"Epic Sword", "DZVV9AGG", 1},
+	        {"Circle Visualizer", "diJiteen", 1},
+	        {"Hex Blade", "fA0bBELV", 1},
+	        {"Bulldog", "nPPLxSA3", 1},
+	        {"FS-627-SENDER", "R3m4gfuP", 1},
+	        {"Voodoo Child", "w5TEtd0Q", 1},
+	        {"Bye Bye", "XBysEMgg", 1},
+	        {"Galil V2", "cnFz3h8D", 1},
+	        {"Mario", "pKmtnc9u", 1},
+	        {"Lighting Blade", "rMEe8R4N", 1},
+	        {"Flamingo Skybox", "8rWM880e", 1},
+	        {"Sin Unleashed", "ZQh5B023", 1},
+	        {"Ravager", "VQEz6a6i", 1},
+	        {"Brock", "Fe5YrxcY", 1},
+	        {"M249", "J4ijx897", 1},
+	        {"MG36", "zLZ4Auqn", 1},
+	        {"Omega Scythe", "Ag8dKZYB", 1},
+	        {"Omega Sword", "7JjxwhPn", 1},
+	    }
+	
+	    local fescripttabList = {
+	        {"Fe God", "KduGECH6", 1},
+	        {"Fe Fly", 1281055032, 2},
+	        {"Fe Invisible", 1180480887, 2},
+	        {"Spam", "74GjB7tB", 1},
+	        {"Lag Switch", "58gjTUf5", 1},
+	        {"FE Shutdown", "0wgKhFmf", 1},
+	    }
+	
+	    local gameScriptsList = {
+	        {"PF Virgo 2.0", "7TeJszah", 1},
+	        {"City Life Bomb Vest", "sLHGSBn1", 1},
+	        {"City Life Suicide", "YdKKQ7yT", 1},
+	        {"City Life Explosion", "vy78mqrG", 1},
+	        {"CB:RO Aimbot", "t3yHg06t", 1},
+	    }
+	
+	    local guitabList = {
+	        {"c00lgui", "Rz2EFsLU", 1},
+	        {"Topkek 4.0", "d0CJRrcg", 1},
+	        {"Topkek 3.0", "SikGfE9u", 1},
+	        {"Ro-Xploit 4.0", 175137115, 2},
+	        {"Ro-Xploit 5.0", 288646117, 2},
+	        {"Ro-Xploit 6.0", 364364477, 2},
+	        {"Dex 3.0", 492005721, 2},
+	        {"Clown Van", "a5UZuuiT", 1},
+	        {"Hell Elevator GUI", "8NYWpf2T", 1},
+	        {"Chams / Aimlock", "Yi7fzELj", 1},
+	        {"YourMom GUI", "289110135", 2},
+	        {"Pepe GUI", "277881926", 2},
+	        {"Brack Hub", "PT9Gf7d5", 2},
+	    }
+	
+	    local mapsList = {
+	        {"Clockwork Arena", "EvnXCXhP", 1},
+	        {"Town Map", 1345094164, 2},
+	        {"Cave Island", "t29C42rm", 1},
+	        {"Nature Map", "gmF4Kq5B", 1},
+	        {"Nazi Map", "az8sLCLT", 1},
+	        {"Ritual Room", "hYCTFiAC", 1},
+	        {"Stripper", "jztW5Vuy", 1},
+	        {"Witch Map", "R9epW292", 1},
+	        {"Rainbow Tunnel", "8bznLitn", 1},
+	        {"Scary Map", "fNw46f74", 1},
+	        {"Nazi Camp", "KJNk4STm", 1},
+	        {"Night Club", 1281063730, 2},
+	    }
+	
+	    local lists = {
+	        {scripttabList, "Scripts"},
+	        {fescripttabList, "FE Scripts"},
+	        {gameScriptsList, "Game Scripts"},
+	        {guitabList, "GUIs"},
+	        {mapsList, "Maps"},
+	    }
+	
+	    local function makeFrame(Active, BackgroundColor3, BorderSizePixel, Name, Parent, Position, Size, ClipsDescendants, Draggable, BackgroundTransparency)
+	        local Frame = Instance.new("Frame")
+	        Frame.Active = Active
+	        Frame.BackgroundColor3 = BackgroundColor3
+	        Frame.BorderSizePixel = BorderSizePixel
+	        Frame.Name = Name
+	        Frame.Parent = Parent
+	        Frame.Position = Position
+	        Frame.Size = Size
+	        Frame.ClipsDescendants = ClipsDescendants
+	        Frame.Draggable = Draggable
+	        Frame.BackgroundTransparency = BackgroundTransparency
+	    end
+	
+	    local function makeScrollingFrame(BackgroundColor3, BorderSizePixel, Name, Parent, Position, Size, CanvasSize, BackgroundTransparency, ScrollBarThickness)
+	        local ScrollingFrame = Instance.new("ScrollingFrame")
+	        ScrollingFrame.BackgroundColor3 = BackgroundColor3
+	        ScrollingFrame.BorderSizePixel = BorderSizePixel
+	        ScrollingFrame.Name = Name
+	        ScrollingFrame.Parent = Parent
+	        ScrollingFrame.Position = Position
+	        ScrollingFrame.Size = Size
+	        ScrollingFrame.CanvasSize = CanvasSize
+	        ScrollingFrame.BackgroundTransparency = BackgroundTransparency
+	        ScrollingFrame.ScrollBarThickness = ScrollBarThickness
+	    end
+	
+	    local function makeTextLabel(BackgroundColor3, BackgroundTransparency, Name, Parent, Position, Size, Font, Text, TextColor3, TextSize, BorderSizePixel, TextWrapped)
+	        local TextLabel = Instance.new("TextLabel")
+	        TextLabel.BackgroundColor3 = BackgroundColor3
+	        TextLabel.BackgroundTransparency = BackgroundTransparency
+	        TextLabel.Name = Name
+	        TextLabel.Parent = Parent
+	        TextLabel.Position = Position
+	        TextLabel.Size = Size
+	        TextLabel.Font = Font
+	        TextLabel.Text = Text
+	        TextLabel.TextColor3 = TextColor3
+	        TextLabel.TextSize = TextSize
+	        TextLabel.BorderSizePixel = BorderSizePixel
+	        TextLabel.TextWrapped = TextWrapped
+	    end
+	
+	    local function makeTextBox(BackgroundColor3, BackgroundTransparency, MultiLine, Name, Parent, Position, Size, Font, Text, TextColor3, TextSize, TextWrapped, TextYAlignment, BorderSizePixel, PlaceholderText, TextXAlignment)
+	        local TextBox = Instance.new("TextBox")
+	        TextBox.BackgroundColor3 = BackgroundColor3
+	        TextBox.BackgroundTransparency = BackgroundTransparency
+	        TextBox.MultiLine = MultiLine
+	        TextBox.Name = Name
+	        TextBox.Parent = Parent
+	        TextBox.Position = Position
+	        TextBox.Size = Size
+	        TextBox.Font = Font
+	        TextBox.Text = Text
+	        TextBox.TextColor3 = TextColor3
+	        TextBox.TextSize = TextSize
+	        TextBox.TextWrapped = TextWrapped
+	        TextBox.TextYAlignment = TextYAlignment
+	        TextBox.BorderSizePixel = BorderSizePixel
+	        TextBox.PlaceholderText = PlaceholderText
+	        TextBox.TextXAlignment = TextXAlignment
+	    end
+	
+	    local function makeTextButton(BackgroundColor3, BorderSizePixel, Name, Parent, Position, Size, Font, Text, TextColor3, TextSize, BackgroundTransparency, func)
+	        local TextButton = Instance.new("TextButton")
+	        TextButton.BackgroundColor3 = BackgroundColor3
+	        TextButton.BorderSizePixel = BorderSizePixel
+	        TextButton.Name = Name
+	        TextButton.Parent = Parent
+	        TextButton.Position = Position
+	        TextButton.Size = Size
+	        TextButton.Font = Font
+	        TextButton.Text = Text
+	        TextButton.TextColor3 = TextColor3
+	        TextButton.TextSize = TextSize
+	        TextButton.BackgroundTransparency = BackgroundTransparency
+	        TextButton.MouseButton1Down:connect(func)
+	    end
+	
+	    local function makeImageLabel(BackgroundColor3, BackgroundTransparency, BorderSizePixel, Name, Parent, Selectable, Size, Image, Position, Rotation)
+	        local ImageLabel = Instance.new("ImageLabel")
+	        ImageLabel.BackgroundColor3 = BackgroundColor3
+	        ImageLabel.BackgroundTransparency = BackgroundTransparency
+	        ImageLabel.BorderSizePixel = BorderSizePixel
+	        ImageLabel.Name = Name
+	        ImageLabel.Parent = Parent
+	        ImageLabel.Selectable = Selectable
+	        ImageLabel.Size = Size
+	        ImageLabel.Image = Image
+	        ImageLabel.Position = Position
+	        ImageLabel.Rotation = Rotation
+	    end
+	
+	    local tabs = {
+	        "Home",
+	        "Scripts",
+	        "FE Scripts",
+	        "Game Scripts",
+	        "GUIs",
+	        "Maps",
+	        "Executor",
+	        "Credits",
+	    }
+	
+	    local selectedTab = tabs[1]
+	
+	    local function changeTab(newTab)
+	        if tweening == false and newTab ~= selectedTab then
+	            tweening = true
+	            if selectedTab == "Credits" then
+	                for _,object in pairs(screenGui.MainFrame.MainStuff.Credits:GetDescendants()) do
+	                    if object.ClassName == "ImageLabel" then
+	                        local sTween = game:GetService("TweenService")
+	                        local part = object		
+	                        local goal = {}
+	                        goal.ImageTransparency = 1
+	                        local tweenInfo = TweenInfo.new(0.5)
+	                        local tween = sTween:Create(part, tweenInfo, goal)
+	                        tween:Play()
+	                    end
+	                end
+	                wait(0.5)
+	            end
+	            screenGui.MainFrame.MainStuff[selectedTab]:TweenPosition(UDim2.new(-1, 0, 0, 0), "Out", "Quad", 0.5)
+	            screenGui.MainFrame.MainStuff[newTab]:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.5)
+	            screenGui.MainFrame.SelectedTab.SelectedTab:TweenPosition(UDim2.new(0, 0, -1, 0), "Out", "Quad", 0.25)
+	            wait(0.25)
+	            screenGui.MainFrame.SelectedTab.SelectedTab.Text = newTab
+	            wait()
+	            screenGui.MainFrame.SelectedTab.SelectedTab:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.25)
+	            wait(0.25)
+	            screenGui.MainFrame.MainStuff[selectedTab].Position = UDim2.new(1, 0, 0, 0)
+	            if newTab == "Credits" then
+	                for _,object in pairs(screenGui.MainFrame.MainStuff.Credits:GetDescendants()) do
+	                    if object.ClassName == "ImageLabel" then
+	                        local sTween = game:GetService("TweenService")
+	                        local part = object		
+	                        local goal = {}
+	                        goal.ImageTransparency = 0
+	                        local tweenInfo = TweenInfo.new(0.5)
+	                        local tween = sTween:Create(part, tweenInfo, goal)
+	                        tween:Play()
+	                    end
+	                end
+	                wait(0.5)
+	            end
+	            selectedTab = newTab
+	            tweening = false
+	        end
+	    end
+	
+	    local function mainTween(what)
+	        if tweening == false then
+	            tweening = true
+	            if what == "Open" then
+	                screenGui.open:TweenPosition(UDim2.new(-1,0,0.531,0), "Out", "Quad", 0.6)
+	                screenGui.MainFrame:TweenSize(UDim2.new(0, 350, 0, 40), "Out", "Quad", 0.6)
+	                wait(0.6)
+	                screenGui.MainFrame:TweenSize(UDim2.new(0, 350, 0, 340), "Out", "Quad", 0.6)
+	                if selectedTab == "Credits" then
+	                    wait(0.6)
+	                    for _,object in pairs(screenGui.MainFrame.MainStuff.Credits:GetDescendants()) do
+	                        if object.ClassName == "ImageLabel" then
+	                            local sTween = game:GetService("TweenService")
+	                            local part = object		
+	                            local goal = {}
+	                            goal.ImageTransparency = 0
+	                            local tweenInfo = TweenInfo.new(0.5)
+	                            local tween = sTween:Create(part, tweenInfo, goal)
+	                            tween:Play()
+	                        end
+	                    end
+	                    wait(0.5)
+	                end
+	            elseif what == "Close" then
+	                if selectedTab == "Credits" then
+	                    for _,object in pairs(screenGui.MainFrame.MainStuff.Credits:GetDescendants()) do
+	                        if object.ClassName == "ImageLabel" then
+	                            local sTween = game:GetService("TweenService")
+	                            local part = object		
+	                            local goal = {}
+	                            goal.ImageTransparency = 1
+	                            local tweenInfo = TweenInfo.new(0.5)
+	                            local tween = sTween:Create(part, tweenInfo, goal)
+	                            tween:Play()
+	                        end
+	                    end
+	                    wait(0.5)
+	                end
+	                screenGui.MainFrame:TweenSize(UDim2.new(0, 350, 0, 40), "Out", "Quad", 0.6)
+	                wait(0.6)
+	                screenGui.MainFrame:TweenSize(UDim2.new(0, 0, 0, 40), "Out", "Quad", 0.6)
+	                screenGui.open:TweenPosition(UDim2.new(0,0,0.531,0), "Out", "Quad", 0.6)
+	            end
+	            if selectedTab ~= "Credits" then
+	                wait(0.6)
+	            end
+	            tweening = false
+	        end
+	    end
+	
+	    --Make Screen
+	    screenGui = Instance.new("ScreenGui")
+	    screenGui.Parent = coreGui
+	    screenGui.Name = "RoseHubV2"
+	
+	    makeFrame(true, Color3.fromRGB(255, 35, 110), 0, "MainFrame", screenGui, UDim2.new(0.5, -175, 0.5, -170), UDim2.new(0, 350, 0, 340), true, true, 0)
+	
+	    makeScrollingFrame(Color3.fromRGB(255, 0, 100), 0, "TabButtons", screenGui.MainFrame, UDim2.new(0, 0, 0, 40), UDim2.new(0, 125, 1, -40), UDim2.new(0, 0, 0, 0), 0, 12)
+	
+	    makeFrame(false, Color3.fromRGB(225, 0, 100), 0, "TitleFrame", screenGui.MainFrame, UDim2.new(0, 0, 0, 0), UDim2.new(1, 0, 0, 40), true, false, 0)
+	
+	    makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "Title", screenGui.MainFrame.TitleFrame, UDim2.new(0, 45, 0, 0), UDim2.new(0, 265, 1, 0), Enum.Font.Fantasy, "Rose Hub v2.0.8", Color3.fromRGB(255, 255, 255), 30, 1, false)
+	
+	    makeImageLabel(Color3.fromRGB(255, 85, 127), 1, 0, "RoseIcon", screenGui.MainFrame.TitleFrame, false, UDim2.new(0, 45, 0, 41), "rbxassetid://1342740333", UDim2.new(0, 0, 0, 0), 0)
+	
+	    makeTextButton(Color3.fromRGB(255, 255, 255), 1, "Close", screenGui.MainFrame.TitleFrame, UDim2.new(0, 310, 0, 0), UDim2.new(0, 40, 0, 40), Enum.Font.ArialBold, "X", Color3.fromRGB(255, 255, 255), 30, 1, function()
+	        mainTween("Close")
+	    end)
+	
+	    makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "MOTD", screenGui.MainFrame, UDim2.new(0, 125, 0, 315), UDim2.new(0, 225, 0, 25), Enum.Font.Fantasy, "MOTD: RIP Humanoid", Color3.fromRGB(255, 255, 255), 16, 0, true)
+	
+	    makeFrame(false, Color3.fromRGB(255, 100, 150), 0, "MainStuff", screenGui.MainFrame, UDim2.new(0, 130, 0, 70), UDim2.new(0, 215, 0, 245), true, false, 0.5)
+	
+	    makeFrame(false, Color3.fromRGB(0, 0, 0), 0, "SelectedTab", screenGui.MainFrame, UDim2.new(0, 125, 0, 40), UDim2.new(0, 225, 0, 30), true, false, 1)
+	
+	    makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "SelectedTab", screenGui.MainFrame.SelectedTab, UDim2.new(0, 0, 0, 0), UDim2.new(0, 225, 0, 30), Enum.Font.Fantasy, "Home", Color3.fromRGB(255, 255, 255), 25, 0, false)
+	
+	    makeFrame(true, Color3.fromRGB(255, 84, 126), 0, "open", screenGui, UDim2.new(-0.5, 0, 0.5, 0), UDim2.new(0, 150, 0, 50), true, false, 1)
+	
+	    makeTextButton(Color3.fromRGB(255, 50, 127), 1, "openbutton", screenGui.open, UDim2.new(0, 0, 0, 0), UDim2.new(1, 0, 1, 0), Enum.Font.Fantasy, "OPEN", Color3.fromRGB(255, 255, 255), 32, false, function()
+	        mainTween("Open")
+	    end)
+	
+	    for i,tabButton in pairs(tabs) do
+	        makeTextButton(Color3.fromRGB(255, 50, 127), 0, tabButton.."Button", screenGui.MainFrame.TabButtons, UDim2.new(0, 5, 0, tabPos), UDim2.new(0, 115, 0, 30), Enum.Font.Fantasy, tabButton, Color3.fromRGB(255, 255, 255), 20, 0, function()
+	            changeTab(tabs[i])
+	        end)
+	        local mainStuffPos = 0
+	        if tabButton == selectedTab then
+	            mainStuffPos = 0
+	        else
+	            mainStuffPos = 1
+	        end
+	        makeScrollingFrame(Color3.fromRGB(0, 0, 0), 1, tabButton, screenGui.MainFrame.MainStuff, UDim2.new(mainStuffPos, 0, 0, 0), UDim2.new(1, 0, 1, 0), UDim2.new(1, 0, 0, 0), 1)
+	
+	        tabPos = tabPos + 35
+	    end
+	
+	    --Sort lists and insert them
+	    for _,list in pairs(lists) do
+	        local toSort = {}
+	        local sortedList = {}
+	        local pos = 28
+	
+	        for _,v in pairs(list[1]) do
+	            table.insert(toSort, v[1])
+	        end
+	
+	        table.sort(toSort)
+	
+	        for i,name in pairs(toSort) do
+	            for i,actualTable in pairs(list[1]) do
+	                if name == actualTable[1] then
+	                    table.insert(sortedList, {actualTable[1], actualTable[2], actualTable[3]})
+	                end
+	            end
+	        end
+	
+	        local function createButons(text)
+	            pos = 28
+	            for _,button in pairs(sortedList) do
+	                if text == "" or string.sub(string.lower(button[1]), 1, string.len(text)) == string.lower(text) then
+	                    makeTextButton(Color3.fromRGB(255, 50, 127), 0, button[1], screenGui.MainFrame.MainStuff[list[2]], UDim2.new(0, 5, 0, pos), UDim2.new(1, -10, 0, 20), Enum.Font.Fantasy, button[1], Color3.fromRGB(255, 255, 255), 14, 0, function()
+	                        if button[3] == 1 then
+	                            loadstring(game:HttpGet("https://pastebin.com/raw/"..button[2], true))()
+	                        elseif button[3] == 2 then
+	                            loadstring(game:GetObjects("rbxassetid://"..button[2])[1].Source)()
+	                        end
+	                    end)
+	                    pos = pos + 23
+	                end
+	            end
+	        end
+	
+	        --Remove Buttons and create new on search
+	        local function removeButtons()
+	            for _,button in pairs(screenGui.MainFrame.MainStuff[list[2]]:GetChildren()) do
+	                if button.ClassName == "TextButton" then
+	                    button:Destroy()
+	                end
+	            end
+	        end
+	
+	        --Search Box
+	        makeTextBox(Color3.fromRGB(255, 50, 127), 0, false, "Search", screenGui.MainFrame.MainStuff[list[2]], UDim2.new(0, 5, 0, 5), UDim2.new(1, -10, 0, 20), Enum.Font.Fantasy, "", Color3.fromRGB(255, 255, 255), 14, false, "Center", 0, "Search "..list[2], "Center")
+	        local function searchBar(chosenList)	
+	            local search = screenGui.MainFrame.MainStuff[chosenList].Search
+	            local currentSearch = ""
+	            search.Changed:connect(function(property)
+	                if property == "Text" then
+	                    if search.Text ~= "" and search.Text ~= currentSearch then
+	                        currentSearch = search.Text
+	                        removeButtons()
+	                        createButons(search.Text)
+	                    elseif search.Text == "" and currentSearch.Text ~= "" then
+	                        currentSearch = search.Text
+	                        removeButtons()
+	                        createButons("")
+	                    end
+	                end
+	            end)
+	        end
+	
+	        searchBar(list[2])	
+	
+	        createButons("")
+	
+	        screenGui.MainFrame.MainStuff[list[2]].CanvasSize = UDim2.new(1, 0, 0, pos+2)
+	        screenGui.MainFrame.MainStuff[list[2]].ScrollBarThickness = 0
+	    end
+	
+	    makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "WelcomeMSG", screenGui.MainFrame.MainStuff.Home, UDim2.new(0.102, 0, 0.045, 0), UDim2.new(0, 170, 0, 29), Enum.Font.Fantasy, "Welcome to Rose Hub!", Color3.fromRGB(255, 255, 255), 20, 1, false)
+	
+	    makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "FEStatus", screenGui.MainFrame.MainStuff.Home, UDim2.new(0.2, 0, 0.155, 0), UDim2.new(0, 128, 0, 22), Enum.Font.Fantasy, "FE: Unknown", Color3.fromRGB(255, 255, 255), 16, 1, false)
+	    if game:GetService("Workspace").FilteringEnabled then --Rather have Enabled/Disabled than true/false
+	        screenGui.MainFrame.MainStuff.Home.FEStatus.Text = "FE: Enabled!"
+	    else
+	        screenGui.MainFrame.MainStuff.Home.FEStatus.Text = "FE: Disabled!"
+	    end
+	
+	    makeFrame(false, Color3.fromRGB(255, 0, 127), 0, "SegLine", screenGui.MainFrame.MainStuff.Home, UDim2.new(0, 0, 0.245, 0), UDim2.new(0, 215, 0, 2), false, false, 0.5)
+	
+	    makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "Explanation", screenGui.MainFrame.MainStuff.Home, UDim2.new(0, 0, 0.253, 0), UDim2.new(0, 215, 0, 183), Enum.Font.SourceSans, 'To get started click the tabs to find what scripts your looking for.\nThe scrolling bar is invisible so to scroll use your scroll wheel.\n\nWant scripts or features added?\n\nJoin our Discord for Support donations and more!', Color3.fromRGB(255, 255, 255), 14, 1, true)
+	    screenGui.MainFrame.MainStuff.Home.Explanation.TextYAlignment = "Top"
+	
+	    makeTextButton(Color3.fromRGB(255, 50, 127), 0, "DiscordInvite", screenGui.MainFrame.MainStuff.Home, UDim2.new(0.179, 0, 0.816, 0), UDim2.new(0, 138, 0, 32), Enum.Font.Fantasy, "Discord", Color3.fromRGB(255, 255, 255), 14, 0, function()
+	        local copy = true
+	        if pcall(function() Synapse:Copy("https://discord.me/rosehub") end) then
+	
+	        else
+	            local clip = setclipboard or Clipboard.set
+	            clip("https://discord.me/rosehub")
+	        end
+	
+	        screenGui.MainFrame.MainStuff.Home.DiscordInvite.text = "Copied!"
+	        wait(1)
+	        screenGui.MainFrame.MainStuff.Home.DiscordInvite.text = "Discord"
+	    end)
+	
+	    makeTextButton(Color3.fromRGB(255, 0, 127), 0, "Clear", screenGui.MainFrame.MainStuff.Executor, UDim2.new(0, 5, 1, -25), UDim2.new(0, 100, 0, 20), Enum.Font.SourceSansBold, "Clear", Color3.fromRGB(255, 255, 255), 14, 0, function()
+	        screenGui.MainFrame.MainStuff.Executor.InputHolder.Input.Text = ""
+	    end)
+	
+	    makeScrollingFrame(Color3.fromRGB(255, 255, 255), 0, "InputHolder", screenGui.MainFrame.MainStuff.Executor, UDim2.new(0, 5, 0, 5), UDim2.new(0, 205, 0, 205), UDim2.new(0, 0, 0, 0), 1, 0)
+	
+	    makeTextBox(Color3.fromRGB(255, 0, 128), 1, true, "Input", screenGui.MainFrame.MainStuff.Executor.InputHolder, UDim2.new(0, 0, 0, 0), UDim2.new(1, 0, 1, 0), Enum.Font.Fantasy, "", Color3.fromRGB(255, 255, 255), 14, true, Enum.TextYAlignment.Top, 0, "Paste/Type Scripts Here", Enum.TextXAlignment.Left)
+	    local execHolder = screenGui.MainFrame.MainStuff.Executor.InputHolder
+	    local execInput = execHolder.Input
+	    local movedExec196 = false
+	    execInput.ClearTextOnFocus = false
+	    --Checks if executor text changed, if so it will change your canvas position IF you are at the bottom of the script. Has an extra check for the first time moving so it doesnt get annoying
+	    execInput.Changed:connect(function(property)
+	        if property == "Text" then
+	            execHolder.CanvasSize = UDim2.new(1, -10, 0, execInput.TextBounds.Y + execInput.TextSize)
+	            if execInput.TextBounds.Y - execHolder.CanvasPosition.Y == 205 then
+	                execHolder.CanvasPosition = Vector2.new(0, execInput.TextBounds.Y+205)
+	                movedExec196 = false
+	            elseif movedExec196 == false and execInput.TextBounds.Y == 196 and execHolder.CanvasPosition.Y == 0 then
+	                execHolder.CanvasPosition = Vector2.new(0, execInput.TextBounds.Y+205)
+	                movedExec196 = true
+	            elseif movedExec196 == true and execInput.TextBounds.Y < 196 then
+	                movedExec196 = false
+	            end
+	        end
+	    end)
+	
+	    makeTextButton(Color3.fromRGB(255, 0, 127), 0, "Execute", screenGui.MainFrame.MainStuff.Executor, UDim2.new(0.5, 2, 1, -25), UDim2.new(0, 100, 0, 20), Enum.Font.SourceSansBold, "Execute", Color3.fromRGB(255, 255, 255), 14, 0, function()
+	        loadstring(screenGui.MainFrame.MainStuff.Executor.InputHolder.Input.Text)()
+	    end)
+	
+	    --Credits
+	    makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "RoseCredit", screenGui.MainFrame.MainStuff.Credits, UDim2.new(0.202, 0, 0.053, 0), UDim2.new(0, 128, 0, 32), Enum.Font.Fantasy, "Rose\nHumanoid#4613", Color3.fromRGB(255, 255, 255), 20, 0, false)
+	
+	    makeImageLabel(Color3.fromRGB(255, 255, 255), 1, 1, "RoseDrops", screenGui.MainFrame.MainStuff.Credits.RoseCredit, false, UDim2.new(0, 66, 0, 65), "rbxassetid://1342740333", UDim2.new(-0.25, 0, -0.844, 0), 80)
+	
+	    makeImageLabel(Color3.fromRGB(255, 255, 255), 1, 1, "RoseDrops2", screenGui.MainFrame.MainStuff.Credits.RoseCredit, false, UDim2.new(0, 66, 0, 65), "rbxassetid://1342740333", UDim2.new(0.891, 0, 4.438, 0), -40)
+	
+	    makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "ZwolfCredit", screenGui.MainFrame.MainStuff.Credits, UDim2.new(0.221, 0, 0.253, 0), UDim2.new(0, 120, 0, 30), Enum.Font.Fantasy, "Zwolf\nZwolf#3762", Color3.fromRGB(255, 255, 255), 20, 1, false)
+	
+	    makeImageLabel(Color3.fromRGB(255, 255, 255), 1, 1, "RoseDrops3", screenGui.MainFrame.MainStuff.Credits.ZwolfCredit, false, UDim2.new(0, 62, 0, 59), "rbxassetid://1342740333", UDim2.new(0.875, 0, 0, 0), -10)
+	
+	    makeImageLabel(Color3.fromRGB(255, 255, 255), 1, 1, "ImageLabel", screenGui.MainFrame.MainStuff.Credits.ZwolfCredit, false, UDim2.new(0, 70, 0, 60), "rbxassetid://1342740333", UDim2.new(-0.483, 0, 0.433, 0), 59)
+	
+	    makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "AlexCredit", screenGui.MainFrame.MainStuff.Credits, UDim2.new(0.191, 0, 0.469, 0), UDim2.new(0, 139, 0, 29), Enum.Font.Fantasy, "Alex\nAlex the Great#9740", Color3.fromRGB(255, 255, 255), 20, 1, false)
+	
+	    makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "DeanCredit", screenGui.MainFrame.MainStuff.Credits, UDim2.new(0.153, 0, 0.755, 0), UDim2.new(0, 139, 0, 40), Enum.Font.Fantasy, "Miya - Intro\nKiwi#4879", Color3.fromRGB(255, 255, 255), 20, 1, false)
+	
+	    for _,object in pairs(screenGui.MainFrame.MainStuff.Credits:GetDescendants()) do
+	        if object.ClassName == "ImageLabel" then
+	            object.ImageTransparency = 1
+	        end
+	    end
+	
+	    screenGui.MainFrame.Size = UDim2.new(0, 0, 0, 40)
+	
+	    --Intro
+	    introgui = Instance.new('ScreenGui',coreGui)
+	    holder = Instance.new('Frame', introgui)
+	    imhx = Instance.new('ImageLabel',holder)
+	    blnhx = Instance.new('ImageLabel',holder)
+	    blnhx2 = Instance.new('ImageLabel',holder)
+	    pooftemp = Instance.new('ImageLabel',holder)
+	    text = Instance.new('ImageLabel',holder)
+	    bar = Instance.new('Frame',holder)
+	    tomatosauce = Instance.new('Sound',holder)
+	    large = Instance.new('Sound',holder)
+	    smol = Instance.new('Sound',holder)
+	    wosh = Instance.new('Sound',holder)
+	    blur = Instance.new('BlurEffect',workspace.CurrentCamera)
+	    blur.Size = 0
+	
+	    -- Properties
+	    holder.Position = UDim2.new(0.5,-50,0.5,-50)
+	    holder.Size = UDim2.new(0,100,0,100)
+	    holder.BackgroundTransparency = 1
+	
+	    imhx.Image = "rbxassetid://1491878692"
+	    imhx.BackgroundTransparency = 1
+	    imhx.Size = UDim2.new(0,100,0,100)
+	    imhx.Position = UDim2.new(0,0,0,-500)
+	    imhx.ZIndex = 3
+	
+	    blnhx.Image = "rbxassetid://1491878477"
+	    blnhx.BackgroundTransparency = 1
+	    blnhx.ImageTransparency = 1
+	    blnhx.Size = UDim2.new(0,100,0,100)
+	    blnhx.Position = UDim2.new(0,0,0,0)
+	    blnhx.ZIndex = 4
+	
+	    tomatosauce.SoundId = "rbxassetid://752527668"
+	    tomatosauce.Volume = 1
+	
+	    large.SoundId = "rbxassetid://541909867"
+	    large.Volume = 1
+	
+	    smol.SoundId = "rbxassetid://541909763"
+	    smol.Volume = 1
+	
+	    wosh.SoundId = "rbxassetid://147722270"
+	    wosh.Volume = 1
+	
+	
+	    blnhx2.Image = "rbxassetid://1491878477"
+	    blnhx2.BackgroundTransparency = 1
+	    blnhx2.ImageTransparency = 1
+	    blnhx2.Size = UDim2.new(0,100,0,100)
+	    blnhx2.Position = UDim2.new(0,0,0,0)
+	
+	    pooftemp.Image = "rbxassetid://1491979712"
+	    pooftemp.BackgroundTransparency = 1
+	    pooftemp.ImageTransparency = 1
+	    pooftemp.Size = UDim2.new(0,100,0,100)
+	    pooftemp.Position = UDim2.new(0,0,0,0)
+	
+	    text.Image = "rbxassetid://1491935743"
+	    text.BackgroundTransparency = 1
+	    text.ImageTransparency = 1
+	    text.Size = UDim2.new(0,500,0,100)
+	    text.Position = UDim2.new(0.5,-250,0,0)
+	    text.ZIndex = 6
+	
+	    bar.Size = UDim2.new(0,0,0,100)
+	    bar.Position = UDim2.new(0.5,0,0,0)
+	    bar.BorderSizePixel = 0
+	    bar.ZIndex = 5
+	    bar.BackgroundColor3 = Color3.fromRGB(255, 35, 110)
+	
+	    -- Animation
+	    local tweenService = game:GetService("TweenService")
+	
+	    local tween1 = TweenInfo.new(  
+	        2,
+	        Enum.EasingStyle.Quint,
+	        Enum.EasingDirection.Out
+	    ) 
+	    local stuff1 = {
+	        Position = UDim2.new(0,0,0,0);
+	        Rotation = -720
+	    }
+	    local stuff6 = {
+	        Size = 34
+	    }
+	    local stuff7 = {
+	        Size = 0
+	    }
+	
+	
+	    local imagetween = tweenService:Create(imhx,tween1,stuff1)
+	
+	    local tween2 = TweenInfo.new(
+	        2,
+	        Enum.EasingStyle.Quint,
+	        Enum.EasingDirection.Out
+	    )
+	    local stuff2 = {
+	        Position = UDim2.new(0,-50,0,-50);
+	        Size = UDim2.new(0,200,0,200);
+	        ImageTransparency = 1
+	    }
+	
+	    local bloop = tweenService:Create(pooftemp,tween2,stuff2)
+	
+	    local tween3 = TweenInfo.new(
+	        1,
+	        Enum.EasingStyle.Quint,
+	        Enum.EasingDirection.Out
+	    )
+	
+	    local tween4 = TweenInfo.new(
+	        2,
+	        Enum.EasingStyle.Quint,
+	        Enum.EasingDirection.Out
+	    )
+	    local stuff3 = {
+	        ImageTransparency = 0
+	    }
+	
+	    local poof = tweenService:Create(blnhx,tween3,stuff3)
+	
+	    local fadein = tweenService:Create(blur,tween1,stuff6)
+	    local fadeout = tweenService:Create(blur,tween1,stuff7)
+	
+	    local textappere = tweenService:Create(text,tween4,stuff3)
+	    -- Playing animations/sounds
+	    imagetween:Play()
+	    large:Play()
+	    fadein:Play()
+	    wait(2)
+	    pooftemp.ImageTransparency = 0
+	    bloop:play()
+	    tomatosauce:Play()
+	    wait(2)
+	    poof:Play()
+	    wait(1)
+	    imhx.ImageTransparency = 1
+	    blnhx2.ImageTransparency = 0
+	    bar:TweenSizeAndPosition(UDim2.new(0,500,0,100),UDim2.new(0.5,-250,0.5,-50),"Out","Quint",2)
+	    blnhx2:TweenPosition(UDim2.new(0,250,0,0),"Out","Quint",2)
+	    blnhx:TweenPosition(UDim2.new(0,-250,0,0),"Out","Quint",2)
+	    smol:Play()
+	    wait(1.3)
+	    textappere:Play()
+	    wait(2)
+	    holder:TweenPosition(UDim2.new(0,5000,0.5,-50),"In","Quint",2)
+	    wosh:Play()
+	    wait(1.4)
+	    fadeout:Play()
+	    wait(2)
+	    introgui:Destroy()
+	    blur:Destroy()
+	
+	    wait()
+	
+	    tweening = true
+	    screenGui.open:TweenPosition(UDim2.new(0, 0, 0.5, 0),'Out','Quad',0.6)
+	    wait(0.6)
+	    tweening = false
+	end)
+	ChatBypasser.MouseButton1Click:Connect(function()
+	    loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+	end)
+	SweetzGui.MouseButton1Click:Connect(function()
+	    loadstring(game:HttpGet("https://pastebin.com/raw/6tXB9htB"))()
+	end)
+	KrnlHub.MouseButton1Click:Connect(function()
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/LaziestBoy/Krnl-Hub/master/Krnl-Hub.lua', true))()
+	end)
+	TopkekV3.MouseButton1Click:Connect(function()
+	    loadstring(game:HttpGet(('https://pastebin.com/raw/LgBc0pqx'),true))()
+	end)
+	ChatSpying.MouseButton1Click:Connect(function()
+	    function showMessage(text, clr)
+	        game.StarterGui:SetCore("ChatMakeSystemMessage", {
+	            Text = text;
+	            Color = clr;
+	        })
+	    end
+	
+	    function loadStalk(plr)
+	        plr.Chatted:Connect(function(msg)
+	            warn("--------------------------------")
+	            print("[" .. plr.Name .. "]: " .. msg)
+	            if string.find(msg, "/w ") then
+	                for i=4,1000 do
+	                    if string.sub(msg,i,i) == " " then
+	                        showMessage("[" .. plr.Name .. " to " .. string.sub(msg,4,i-1) .. "]:" .. string.sub(msg,i), Color3.fromRGB(175, 175, 175))
+	                        wait()
+	                        break
+	                    end
+	                end
+	            end
+	            if string.find(msg, "/whisper ") then
+	                for i=4,1000 do
+	                    if string.sub(msg,i,i) == " " then
+	                        showMessage("[" .. plr.Name .. " to " .. string.sub(msg,10,i-1) .. "]:" .. string.sub(msg,i), Color3.fromRGB(175, 175, 175))
+	                        wait()
+	                        break
+	                    end
+	                end
+	            end
+	            if string.find(msg, "/e ") then
+	                showMessage("[" .. plr.Name .. "]: " .. msg, Color3.fromRGB(175, 175, 175))
+	                wait()
+	            end
+	            if string.find(msg, "/t ") then
+	                if plr.Team ~= game.Players.LocalPlayer.Team then
+	                    for i=4,1000 do
+	                        if string.sub(msg,i,i) == " " then
+	                            showMessage("[" .. plr.Name .. " to team " .. tostring(plr.Team) .. "]:" .. string.sub(msg,i), Color3.fromRGB(175*plr.Team.TeamColor.r, 175*plr.Team.TeamColor.g, 175*plr.Team.TeamColor.b))
+	                            wait()
+	                            break
+	                        end
+	                    end
+	                end
+	            end
+	            if string.find(msg, "/team ") then
+	                if plr.Team ~= game.Players.LocalPlayer.Team then
+	                    for i=7,1000 do
+	                        if string.sub(msg,i,i) == " " then
+	                            showMessage("[" .. plr.Name .. " to team " .. tostring(plr.Team) .. "]:" .. string.sub(msg,i), Color3.fromRGB(175*plr.Team.TeamColor.r, 175*plr.Team.TeamColor.g, 175*plr.Team.TeamColor.b))
+	                            wait()
+	                            break
+	                        end
+	                    end
+	                end
+	            end
+	        end)
+	    end
+	
+	    local players = game.Players:GetPlayers()
+	    for i=1,#players do
+	        if players[i].Name ~= game.Players.LocalPlayer.Name then
+	            loadStalk(players[i])
+	        end
+	    end
+	
+	    game:GetService("Players").PlayerAdded:Connect(function(plr)
+	        loadStalk(plr)
+	    end)
+	end)
+	FreeCam.MouseButton1Click:Connect(function()
+	    function sandbox(var,func)
+	        local env = getfenv(func)
+	        local newenv = setmetatable({},{
+	            __index = function(self,k)
+	                if k=="script" then
+	                    return var
+	                else
+	                    return env[k]
+	                end
+	            end,
+	        })
+	        setfenv(func,newenv)
+	        return func
+	    end
+	    cors = {}
+	    mas = Instance.new("Model",game:GetService("Lighting"))
+	    LocalScript0 = Instance.new("LocalScript")
+	    LocalScript0.Name = "FreeCamera"
+	    LocalScript0.Parent = mas
+	    table.insert(cors,sandbox(LocalScript0,function()
+	        -----------------------------------------------------------------------
+	        -- Freecam
+	        -- Cinematic free camera for spectating and video production.
+	        ------------------------------------------------------------------------
+	
+	        local pi    = math.pi
+	        local abs   = math.abs
+	        local clamp = math.clamp
+	        local exp   = math.exp
+	        local rad   = math.rad
+	        local sign  = math.sign
+	        local sqrt  = math.sqrt
+	        local tan   = math.tan
+	
+	        local ContextActionService = game:GetService("ContextActionService")
+	        local Players = game:GetService("Players")
+	        local RunService = game:GetService("RunService")
+	        local StarterGui = game:GetService("StarterGui")
+	        local UserInputService = game:GetService("UserInputService")
+	
+	        local LocalPlayer = Players.LocalPlayer
+	        if not LocalPlayer then
+	            Players:GetPropertyChangedSignal("LocalPlayer"):Wait()
+	            LocalPlayer = Players.LocalPlayer
+	        end
+	
+	        local Camera = workspace.CurrentCamera
+	        workspace:GetPropertyChangedSignal("CurrentCamera"):Connect(function()
+	            local newCamera = workspace.CurrentCamera
+	            if newCamera then
+	                Camera = newCamera
+	            end
+	        end)
+	
+	        ------------------------------------------------------------------------
+	
+	        local TOGGLE_INPUT_PRIORITY = Enum.ContextActionPriority.Low.Value
+	        local INPUT_PRIORITY = Enum.ContextActionPriority.High.Value
+	        local FREECAM_MACRO_KB = {Enum.KeyCode.LeftShift, Enum.KeyCode.P}
+	
+	        local NAV_GAIN = Vector3.new(1, 1, 1)*64
+	        local PAN_GAIN = Vector2.new(0.75, 1)*8
+	        local FOV_GAIN = 300
+	
+	        local PITCH_LIMIT = rad(90)
+	
+	        local VEL_STIFFNESS = 1.5
+	        local PAN_STIFFNESS = 1.0
+	        local FOV_STIFFNESS = 4.0
+	
+	        ------------------------------------------------------------------------
+	
+	        local Spring = {} do
+	            Spring.__index = Spring
+	
+	            function Spring.new(freq, pos)
+	                local self = setmetatable({}, Spring)
+	                self.f = freq
+	                self.p = pos
+	                self.v = pos*0
+	                return self
+	            end
+	
+	            function Spring:Update(dt, goal)
+	                local f = self.f*2*pi
+	                local p0 = self.p
+	                local v0 = self.v
+	
+	                local offset = goal - p0
+	                local decay = exp(-f*dt)
+	
+	                local p1 = goal + (v0*dt - offset*(f*dt + 1))*decay
+	                local v1 = (f*dt*(offset*f - v0) + v0)*decay
+	
+	                self.p = p1
+	                self.v = v1
+	
+	                return p1
+	            end
+	
+	            function Spring:Reset(pos)
+	                self.p = pos
+	                self.v = pos*0
+	            end
+	        end
+	
+	        ------------------------------------------------------------------------
+	
+	        local cameraPos = Vector3.new()
+	        local cameraRot = Vector2.new()
+	        local cameraFov = 0
+	
+	        local velSpring = Spring.new(VEL_STIFFNESS, Vector3.new())
+	        local panSpring = Spring.new(PAN_STIFFNESS, Vector2.new())
+	        local fovSpring = Spring.new(FOV_STIFFNESS, 0)
+	
+	        ------------------------------------------------------------------------
+	
+	        local Input = {} do
+	            local thumbstickCurve do
+	                local K_CURVATURE = 2.0
+	                local K_DEADZONE = 0.15
+	
+	                local function fCurve(x)
+	                    return (exp(K_CURVATURE*x) - 1)/(exp(K_CURVATURE) - 1)
+	                end
+	
+	                local function fDeadzone(x)
+	                    return fCurve((x - K_DEADZONE)/(1 - K_DEADZONE))
+	                end
+	
+	                function thumbstickCurve(x)
+	                    return sign(x)*clamp(fDeadzone(abs(x)), 0, 1)
+	                end
+	            end
+	
+	            local gamepad = {
+	                ButtonX = 0,
+	                ButtonY = 0,
+	                DPadDown = 0,
+	                DPadUp = 0,
+	                ButtonL2 = 0,
+	                ButtonR2 = 0,
+	                Thumbstick1 = Vector2.new(),
+	                Thumbstick2 = Vector2.new(),
+	            }
+	
+	            local keyboard = {
+	                W = 0,
+	                A = 0,
+	                S = 0,
+	                D = 0,
+	                E = 0,
+	                Q = 0,
+	                U = 0,
+	                H = 0,
+	                J = 0,
+	                K = 0,
+	                I = 0,
+	                Y = 0,
+	                Up = 0,
+	                Down = 0,
+	                LeftShift = 0,
+	                RightShift = 0,
+	            }
+	
+	            local mouse = {
+	                Delta = Vector2.new(),
+	                MouseWheel = 0,
+	            }
+	
+	            local NAV_GAMEPAD_SPEED  = Vector3.new(1, 1, 1)
+	            local NAV_KEYBOARD_SPEED = Vector3.new(1, 1, 1)
+	            local PAN_MOUSE_SPEED    = Vector2.new(1, 1)*(pi/64)
+	            local PAN_GAMEPAD_SPEED  = Vector2.new(1, 1)*(pi/8)
+	            local FOV_WHEEL_SPEED    = 1.0
+	            local FOV_GAMEPAD_SPEED  = 0.25
+	            local NAV_ADJ_SPEED      = 0.75
+	            local NAV_SHIFT_MUL      = 0.25
+	
+	            local navSpeed = 1
+	
+	            function Input.Vel(dt)
+	                navSpeed = clamp(navSpeed + dt*(keyboard.Up - keyboard.Down)*NAV_ADJ_SPEED, 0.01, 4)
+	
+	                local kGamepad = Vector3.new(
+	                    thumbstickCurve(gamepad.Thumbstick1.x),
+	                    thumbstickCurve(gamepad.ButtonR2) - thumbstickCurve(gamepad.ButtonL2),
+	                    thumbstickCurve(-gamepad.Thumbstick1.y)
+	                )*NAV_GAMEPAD_SPEED
+	
+	                local kKeyboard = Vector3.new(
+	                    keyboard.D - keyboard.A + keyboard.K - keyboard.H,
+	                    keyboard.E - keyboard.Q + keyboard.I - keyboard.Y,
+	                    keyboard.S - keyboard.W + keyboard.J - keyboard.U
+	                )*NAV_KEYBOARD_SPEED
+	
+	                local shift = UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) or UserInputService:IsKeyDown(Enum.KeyCode.RightShift)
+	
+	                return (kGamepad + kKeyboard)*(navSpeed*(shift and NAV_SHIFT_MUL or 1))
+	            end
+	
+	            function Input.Pan(dt)
+	                local kGamepad = Vector2.new(
+	                    thumbstickCurve(gamepad.Thumbstick2.y),
+	                    thumbstickCurve(-gamepad.Thumbstick2.x)
+	                )*PAN_GAMEPAD_SPEED
+	                local kMouse = mouse.Delta*PAN_MOUSE_SPEED
+	                mouse.Delta = Vector2.new()
+	                return kGamepad + kMouse
+	            end
+	
+	            function Input.Fov(dt)
+	                local kGamepad = (gamepad.ButtonX - gamepad.ButtonY)*FOV_GAMEPAD_SPEED
+	                local kMouse = mouse.MouseWheel*FOV_WHEEL_SPEED
+	                mouse.MouseWheel = 0
+	                return kGamepad + kMouse
+	            end
+	
+	            do
+	                local function Keypress(action, state, input)
+	                    keyboard[input.KeyCode.Name] = state == Enum.UserInputState.Begin and 1 or 0
+	                    return Enum.ContextActionResult.Sink
+	                end
+	
+	                local function GpButton(action, state, input)
+	                    gamepad[input.KeyCode.Name] = state == Enum.UserInputState.Begin and 1 or 0
+	                    return Enum.ContextActionResult.Sink
+	                end
+	
+	                local function MousePan(action, state, input)
+	                    local delta = input.Delta
+	                    mouse.Delta = Vector2.new(-delta.y, -delta.x)
+	                    return Enum.ContextActionResult.Sink
+	                end
+	
+	                local function Thumb(action, state, input)
+	                    gamepad[input.KeyCode.Name] = input.Position
+	                    return Enum.ContextActionResult.Sink
+	                end
+	
+	                local function Trigger(action, state, input)
+	                    gamepad[input.KeyCode.Name] = input.Position.z
+	                    return Enum.ContextActionResult.Sink
+	                end
+	
+	                local function MouseWheel(action, state, input)
+	                    mouse[input.UserInputType.Name] = -input.Position.z
+	                    return Enum.ContextActionResult.Sink
+	                end
+	
+	                local function Zero(t)
+	                    for k, v in pairs(t) do
+	                        t[k] = v*0
+	                    end
+	                end
+	
+	                function Input.StartCapture()
+	                    ContextActionService:BindActionAtPriority("FreecamKeyboard", Keypress, false, INPUT_PRIORITY,
+	                        Enum.KeyCode.W, Enum.KeyCode.U,
+	                        Enum.KeyCode.A, Enum.KeyCode.H,
+	                        Enum.KeyCode.S, Enum.KeyCode.J,
+	                        Enum.KeyCode.D, Enum.KeyCode.K,
+	                        Enum.KeyCode.E, Enum.KeyCode.I,
+	                        Enum.KeyCode.Q, Enum.KeyCode.Y,
+	                        Enum.KeyCode.Up, Enum.KeyCode.Down
+	                    )
+	                    ContextActionService:BindActionAtPriority("FreecamMousePan",          MousePan,   false, INPUT_PRIORITY, Enum.UserInputType.MouseMovement)
+	                    ContextActionService:BindActionAtPriority("FreecamMouseWheel",        MouseWheel, false, INPUT_PRIORITY, Enum.UserInputType.MouseWheel)
+	                    ContextActionService:BindActionAtPriority("FreecamGamepadButton",     GpButton,   false, INPUT_PRIORITY, Enum.KeyCode.ButtonX, Enum.KeyCode.ButtonY)
+	                    ContextActionService:BindActionAtPriority("FreecamGamepadTrigger",    Trigger,    false, INPUT_PRIORITY, Enum.KeyCode.ButtonR2, Enum.KeyCode.ButtonL2)
+	                    ContextActionService:BindActionAtPriority("FreecamGamepadThumbstick", Thumb,      false, INPUT_PRIORITY, Enum.KeyCode.Thumbstick1, Enum.KeyCode.Thumbstick2)
+	                end
+	
+	                function Input.StopCapture()
+	                    navSpeed = 1
+	                    Zero(gamepad)
+	                    Zero(keyboard)
+	                    Zero(mouse)
+	                    ContextActionService:UnbindAction("FreecamKeyboard")
+	                    ContextActionService:UnbindAction("FreecamMousePan")
+	                    ContextActionService:UnbindAction("FreecamMouseWheel")
+	                    ContextActionService:UnbindAction("FreecamGamepadButton")
+	                    ContextActionService:UnbindAction("FreecamGamepadTrigger")
+	                    ContextActionService:UnbindAction("FreecamGamepadThumbstick")
+	                end
+	            end
+	        end
+	
+	        local function GetFocusDistance(cameraFrame)
+	            local znear = 0.1
+	            local viewport = Camera.ViewportSize
+	            local projy = 2*tan(cameraFov/2)
+	            local projx = viewport.x/viewport.y*projy
+	            local fx = cameraFrame.rightVector
+	            local fy = cameraFrame.upVector
+	            local fz = cameraFrame.lookVector
+	
+	            local minVect = Vector3.new()
+	            local minDist = 512
+	
+	            for x = 0, 1, 0.5 do
+	                for y = 0, 1, 0.5 do
+	                    local cx = (x - 0.5)*projx
+	                    local cy = (y - 0.5)*projy
+	                    local offset = fx*cx - fy*cy + fz
+	                    local origin = cameraFrame.p + offset*znear
+	                    local part, hit = workspace:FindPartOnRay(Ray.new(origin, offset.unit*minDist))
+	                    local dist = (hit - origin).magnitude
+	                    if minDist > dist then
+	                        minDist = dist
+	                        minVect = offset.unit
+	                    end
+	                end
+	            end
+	
+	            return fz:Dot(minVect)*minDist
+	        end
+	
+	        ------------------------------------------------------------------------
+	
+	        local function StepFreecam(dt)
+	            local vel = velSpring:Update(dt, Input.Vel(dt))
+	            local pan = panSpring:Update(dt, Input.Pan(dt))
+	            local fov = fovSpring:Update(dt, Input.Fov(dt))
+	
+	            local zoomFactor = sqrt(tan(rad(70/2))/tan(rad(cameraFov/2)))
+	
+	            cameraFov = clamp(cameraFov + fov*FOV_GAIN*(dt/zoomFactor), 1, 120)
+	            cameraRot = cameraRot + pan*PAN_GAIN*(dt/zoomFactor)
+	            cameraRot = Vector2.new(clamp(cameraRot.x, -PITCH_LIMIT, PITCH_LIMIT), cameraRot.y%(2*pi))
+	
+	            local cameraCFrame = CFrame.new(cameraPos)*CFrame.fromOrientation(cameraRot.x, cameraRot.y, 0)*CFrame.new(vel*NAV_GAIN*dt)
+	            cameraPos = cameraCFrame.p
+	
+	            Camera.CFrame = cameraCFrame
+	            Camera.Focus = cameraCFrame*CFrame.new(0, 0, -GetFocusDistance(cameraCFrame))
+	            Camera.FieldOfView = cameraFov
+	        end
+	
+	        ------------------------------------------------------------------------
+	
+	        local PlayerState = {} do
+	            local mouseIconEnabled
+	            local cameraSubject
+	            local cameraType
+	            local cameraFocus
+	            local cameraCFrame
+	            local cameraFieldOfView
+	            local screenGuis = {}
+	            local coreGuis = {
+	                Backpack = true,
+	                Chat = true,
+	                Health = true,
+	                PlayerList = true,
+	            }
+	            local setCores = {
+	                BadgesNotificationsActive = true,
+	                PointsNotificationsActive = true,
+	            }
+	
+	            -- Save state and set up for freecam
+	            function PlayerState.Push()
+	                for name in pairs(coreGuis) do
+	                    coreGuis[name] = StarterGui:GetCoreGuiEnabled(Enum.CoreGuiType[name])
+	                    StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType[name], false)
+	                end
+	                for name in pairs(setCores) do
+	                    setCores[name] = StarterGui:GetCore(name)
+	                    StarterGui:SetCore(name, false)
+	                end
+	                local playergui = LocalPlayer:FindFirstChildOfClass("PlayerGui")
+	                if playergui then
+	                    for _, gui in pairs(playergui:GetChildren()) do
+	                        if gui:IsA("ScreenGui") and gui.Enabled then
+	                            screenGuis[#screenGuis + 1] = gui
+	                            gui.Enabled = false
+	                        end
+	                    end
+	                end
+	
+	                cameraFieldOfView = Camera.FieldOfView
+	                Camera.FieldOfView = 70
+	
+	                cameraType = Camera.CameraType
+	                Camera.CameraType = Enum.CameraType.Custom
+	
+	                cameraSubject = Camera.CameraSubject
+	                Camera.CameraSubject = nil
+	
+	                cameraCFrame = Camera.CFrame
+	                cameraFocus = Camera.Focus
+	
+	                mouseIconEnabled = UserInputService.MouseIconEnabled
+	                UserInputService.MouseIconEnabled = false
+	
+	                mouseBehavior = UserInputService.MouseBehavior
+	                UserInputService.MouseBehavior = Enum.MouseBehavior.Default
+	            end
+	
+	            -- Restore state
+	            function PlayerState.Pop()
+	                for name, isEnabled in pairs(coreGuis) do
+	                    StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType[name], isEnabled)
+	                end
+	                for name, isEnabled in pairs(setCores) do
+	                    StarterGui:SetCore(name, isEnabled)
+	                end
+	                for _, gui in pairs(screenGuis) do
+	                    if gui.Parent then
+	                        gui.Enabled = true
+	                    end
+	                end
+	
+	                Camera.FieldOfView = cameraFieldOfView
+	                cameraFieldOfView = nil
+	
+	                Camera.CameraType = cameraType
+	                cameraType = nil
+	
+	                Camera.CameraSubject = cameraSubject
+	                cameraSubject = nil
+	
+	                Camera.CFrame = cameraCFrame
+	                cameraCFrame = nil
+	
+	                Camera.Focus = cameraFocus
+	                cameraFocus = nil
+	
+	                UserInputService.MouseIconEnabled = mouseIconEnabled
+	                mouseIconEnabled = nil
+	
+	                UserInputService.MouseBehavior = mouseBehavior
+	                mouseBehavior = nil
+	            end
+	        end
+	
+	        local function StartFreecam()
+	            local cameraCFrame = Camera.CFrame
+	            cameraRot = Vector2.new(cameraCFrame:toEulerAnglesYXZ())
+	            cameraPos = cameraCFrame.p
+	            cameraFov = Camera.FieldOfView
+	
+	            velSpring:Reset(Vector3.new())
+	            panSpring:Reset(Vector2.new())
+	            fovSpring:Reset(0)
+	
+	            PlayerState.Push()
+	            RunService:BindToRenderStep("Freecam", Enum.RenderPriority.Camera.Value, StepFreecam)
+	            Input.StartCapture()
+	        end
+	
+	        local function StopFreecam()
+	            Input.StopCapture()
+	            RunService:UnbindFromRenderStep("Freecam")
+	            PlayerState.Pop()
+	        end
+	
+	        ------------------------------------------------------------------------
+	
+	        do
+	            local enabled = false
+	
+	            local function ToggleFreecam()
+	                if enabled then
+	                    StopFreecam()
+	                else
+	                    StartFreecam()
+	                end
+	                enabled = not enabled
+	            end
+	
+	            local function CheckMacro(macro)
+	                for i = 1, #macro - 1 do
+	                    if not UserInputService:IsKeyDown(macro[i]) then
+	                        return
+	                    end
+	                end
+	                ToggleFreecam()
+	            end
+	
+	            local function HandleActivationInput(action, state, input)
+	                if state == Enum.UserInputState.Begin then
+	                    if input.KeyCode == FREECAM_MACRO_KB[#FREECAM_MACRO_KB] then
+	                        CheckMacro(FREECAM_MACRO_KB)
+	                    end
+	                end
+	                return Enum.ContextActionResult.Pass
+	            end
+	
+	            ContextActionService:BindActionAtPriority("FreecamToggle", HandleActivationInput, false, TOGGLE_INPUT_PRIORITY, FREECAM_MACRO_KB[#FREECAM_MACRO_KB])
+	        end
+	    end))
+	    for i,v in pairs(mas:GetChildren()) do
+	        v.Parent = game:GetService("Players").LocalPlayer.PlayerGui
+	        pcall(function() v:MakeJoints() end)
+	    end
+	    mas:Destroy()
+	    for i,v in pairs(cors) do
+	        spawn(function()
+	            pcall(v)
+	        end)
+	    end
+	end)
+end
+coroutine.wrap(AQJF_fake_script)()
+local function JSGDZOQ_fake_script() -- Open.OpenSpike 
+	local script = Instance.new('LocalScript', Open)
+
+	Open = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	    if Open == false then
+	        Open = true
+	        script.Parent.Text = "Close Spike"
+	        script.Parent.Parent.Spike.Visible = true
+	    else
+	        Open = false
+	        script.Parent.Text = "Open Spike"
+	        script.Parent.Parent.Spike.Visible = false
+	    end
+	end)
+end
+coroutine.wrap(JSGDZOQ_fake_script)()
